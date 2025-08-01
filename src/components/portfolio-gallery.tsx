@@ -186,7 +186,6 @@ export default function PortfolioGallery() {
       ? projects
       : projects.filter((project) => project.category === selectedCategory);
 
-
   const nextImage = () => {
     if (selectedProject) {
       setCurrentImageIndex((prev) =>
@@ -275,7 +274,6 @@ export default function PortfolioGallery() {
                   </div>
                   <p className="studio-text-light mb-4">{project.description}</p>
                   <div className="text-sm studio-text-light">
-
                     <p>Client: {project.client}</p>
                     <p>Année: {project.year}</p>
 
