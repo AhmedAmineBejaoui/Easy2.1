@@ -3,6 +3,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ArrowLeft, ArrowRight } from "lucide-react";
 
+
 interface Project {
   id: string;
   name: string;
@@ -19,6 +20,7 @@ interface Project {
 }
 
 export default function PortfolioGallery() {
+
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -171,6 +173,7 @@ export default function PortfolioGallery() {
   ];
 
   const categories = [
+
     "Tous",
     "Résidentiel",
     "Commercial",
@@ -182,6 +185,7 @@ export default function PortfolioGallery() {
     selectedCategory === "Tous"
       ? projects
       : projects.filter((project) => project.category === selectedCategory);
+
 
   const nextImage = () => {
     if (selectedProject) {
@@ -216,10 +220,12 @@ export default function PortfolioGallery() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-bold studio-primary mb-6">
+
               Projets récents
             </h2>
             <p className="text-xl studio-text-light mb-8">
               Aperçu de nos dernières réalisations
+
             </p>
           </motion.div>
 
@@ -269,8 +275,10 @@ export default function PortfolioGallery() {
                   </div>
                   <p className="studio-text-light mb-4">{project.description}</p>
                   <div className="text-sm studio-text-light">
+
                     <p>Client: {project.client}</p>
                     <p>Année: {project.year}</p>
+
                   </div>
                 </div>
               </motion.div>
@@ -347,6 +355,7 @@ export default function PortfolioGallery() {
                     </div>
                     <div>
                     <p className="font-semibold studio-primary">Année</p>
+
                       <p className="studio-text-light">{selectedProject.year}</p>
                     </div>
                   </div>
@@ -356,21 +365,25 @@ export default function PortfolioGallery() {
                   <div className="space-y-6">
                     <div>
                       <h3 className="text-xl font-semibold studio-primary mb-3">Aperçu du projet</h3>
+
                       <p className="studio-text-light leading-relaxed">{selectedProject.description}</p>
                     </div>
 
                     <div>
                       <h3 className="text-xl font-semibold studio-primary mb-3">Défi</h3>
+
                       <p className="studio-text-light leading-relaxed">{selectedProject.challenge}</p>
                     </div>
 
                     <div>
                       <h3 className="text-xl font-semibold studio-primary mb-3">Solution</h3>
+
                       <p className="studio-text-light leading-relaxed">{selectedProject.solution}</p>
                     </div>
 
                     <div>
                       <h3 className="text-xl font-semibold studio-primary mb-3">Impact</h3>
+
                       <p className="studio-text-light leading-relaxed">{selectedProject.impact}</p>
                     </div>
                   </div>

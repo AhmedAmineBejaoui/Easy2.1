@@ -1,25 +1,30 @@
 "use client";
 import React from "react";
+
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, User, Clock, Facebook, Twitter, Linkedin } from "lucide-react";
 import Link from "next/link";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 
+
 export default function ArticleSiteWeb() {
   return (
     <div className="min-h-screen bg-[#EAEEFE]">
       <Header />
 
+
       {/* Hero Section */}
       <section className="pt-32 pb-12 bg-[#EAEEFE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
           <Link href="/">
             <button className="flex items-center gap-2 text-[#c30011] hover:text-[#a5000e] transition-colors duration-300 mb-8">
               <ArrowLeft size={20} />
               Retour à l'accueil
             </button>
           </Link>
+
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -190,6 +195,7 @@ export default function ArticleSiteWeb() {
           </div>
         </div>
       </section>
+
 
       <Footer />
     </div>
