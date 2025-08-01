@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 
+
 export default function ArticleTendancesWebDesign() {
   return (
     <div className="min-h-screen bg-[#EAEEFE]">
@@ -14,6 +15,7 @@ export default function ArticleTendancesWebDesign() {
       {/* Hero Section */}
       <section className="pt-32 pb-12 bg-[#EAEEFE]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
           <Link href="/">
             <button className="flex items-center gap-2 text-[#c30011] hover:text-[#a5000e] transition-colors duration-300 mb-8">
               <ArrowLeft size={20} />
@@ -179,6 +181,7 @@ export default function ArticleTendancesWebDesign() {
           </div>
         </div>
       </section>
+
 
       <Footer />
     </div>
