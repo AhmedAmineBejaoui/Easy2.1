@@ -12,7 +12,7 @@ export const Blog = () => {
       readTime: "5 min de lecture",
       excerpt: "À l'ère du digital, ne pas avoir de site web revient à ne pas exister. Découvrez pourquoi un site web professionnel est un investissement stratégique incontournable.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
-      link: "#"
+      link: "/blog/site-web-professionnel-2025"
     },
     {
       title: "6 tendances web design qui vont marquer 2025",
@@ -22,7 +22,7 @@ export const Blog = () => {
       readTime: "7 min de lecture",
       excerpt: "Le design web évolue vite. Découvrez les 6 tendances design qui feront la différence cette année : typographies audacieuses, mode sombre, micro-interactions et plus.",
       image: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
-      link: "#"
+      link: "/blog/tendances-web-design-2025"
     },
     {
       title: "Comment une stratégie de contenu transforme votre présence en ligne",
@@ -32,7 +32,7 @@ export const Blog = () => {
       readTime: "6 min de lecture",
       excerpt: "Un beau site, c'est bien. Un site qui parle, qui vit, qui attire, c'est encore mieux. Découvrez comment le contenu peut transformer votre présence digitale.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
-      link: "#"
+      link: "/blog/strategie-contenu-presence-en-ligne"
     }
   ];
 
