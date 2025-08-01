@@ -1,51 +1,45 @@
-
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
-import { Calendar, ArrowRight, User } from "lucide-react";
-import Link from "next/link";
+import { motion } from 'framer-motion';
 
 export const Blog = () => {
-  const blogPosts = [
+  const articles = [
     {
-      id: 1,
-      slug: "power-of-color",
-      title: "Le Pouvoir de la Couleur : Transformer Votre Espace",
-      excerpt: "Découvrez comment la bonne palette de couleurs peut complètement transformer l'humeur et l'énergie de votre espace de vie.",
+      title: "Pourquoi chaque entreprise a besoin d'un site web professionnel en 2025",
+      category: "Développement Web",
       author: "Sarah Johnson",
-      date: "15 Janvier 2025",
-      category: "Conseils Design",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      readTime: "5 min de lecture"
+      date: "January 15, 2025",
+      readTime: "5 min de lecture",
+      excerpt: "À l'ère du digital, ne pas avoir de site web revient à ne pas exister. Découvrez pourquoi un site web professionnel est un investissement stratégique incontournable.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
+      link: "#"
     },
     {
-      id: 2,
-      slug: "small-spaces",
-      title: "Maximiser les Petits Espaces : Solutions Design Innovantes",
-      excerpt: "Petit ne signifie pas à l'étroit. Explorez des stratégies créatives pour maximiser la fonctionnalité et le style.",
+      title: "6 tendances web design qui vont marquer 2025",
+      category: "Design Web",
       author: "Michael Chen",
-      date: "10 Janvier 2025",
-      category: "Aménagement",
-      image: "https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      readTime: "7 min de lecture"
+      date: "January 10, 2025",
+      readTime: "7 min de lecture",
+      excerpt: "Le design web évolue vite. Découvrez les 6 tendances design qui feront la différence cette année : typographies audacieuses, mode sombre, micro-interactions et plus.",
+      image: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
+      link: "#"
     },
     {
-      id: 3,
-      slug: "modern-restoration",
-      title: "Guide de la Restauration Moderne",
-      excerpt: "Insuffler une nouvelle vie aux pièces classiques tout en conservant leur caractère authentique.",
+      title: "Comment une stratégie de contenu transforme votre présence en ligne",
+      category: "Marketing Digital",
       author: "Emma Rodriguez",
-      date: "5 Janvier 2025",
-      category: "Restauration",
-      image: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-      readTime: "6 min de lecture"
+      date: "January 5, 2025",
+      readTime: "6 min de lecture",
+      excerpt: "Un beau site, c'est bien. Un site qui parle, qui vit, qui attire, c'est encore mieux. Découvrez comment le contenu peut transformer votre présence digitale.",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
+      link: "#"
     }
   ];
 
   return (
-    <section id="blog" className="py-24 bg-[#EAEEFE] scroll-mt-20">
+    <section className="bg-[#EAEEFE] py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -53,100 +47,96 @@ export const Blog = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="mb-4">
-            <span className="inline-block px-6 py-2 bg-[#c30011] text-white text-sm font-medium tracking-wide uppercase rounded-full">
-              Blog & Inspiration
-            </span>
+          <div className="inline-block bg-white px-4 py-2 rounded-full text-sm font-medium text-[#c30011] mb-6">
+            DERNIÈRES PERSPECTIVES
           </div>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#000] mb-6 tracking-tight">
-            Design Stories & <span className="italic font-bold text-[#c30011]">Inspiration</span>
+          <h2 className="font-heading text-4xl sm:text-5xl font-normal text-[#000] mb-6">
+            Histoires de création et d'<span className="italic font-bold text-[#c30011]">innovation digitale</span>
           </h2>
-          <p className="text-xl text-[#000] max-w-3xl mx-auto leading-relaxed">
-            Explorez nos dernières réflexions sur le design d'intérieur, les tendances et les solutions créatives pour améliorer vos espaces de vie.
+          <p className="text-lg text-[#666] max-w-3xl mx-auto">
+            Explorez nos dernières réflexions sur le développement web et mobile, le design graphique, les tendances numériques et les solutions créatives pour faire évoluer votre présence en ligne et booster vos projets.
           </p>
         </motion.div>
 
-        {/* Blog Posts Grid */}
-        <div className="grid lg:grid-cols-3 gap-8">
-          {blogPosts.map((post, index) => (
+        {/* Articles Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {articles.map((article, index) => (
             <motion.article
-              key={post.id}
+              key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
+              className="bg-white rounded-3xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] transition-all duration-300 group"
             >
-              <Link href={`/blog/${post.slug}`}>
-                <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 cursor-pointer h-full">
-                  {/* Image */}
-                  <div className="relative overflow-hidden h-64">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute top-4 left-4">
-                      <span className="bg-[#c30011] text-white px-3 py-1 rounded-full text-sm font-medium">
-                        {post.category}
+              <div className="relative overflow-hidden">
+                <img
+                  src={article.image}
+                  alt={article.title}
+                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-[#c30011] text-white px-3 py-1 rounded-full text-xs font-medium">
+                    {article.category}
+                  </span>
+                </div>
+              </div>
+
+              <div className="p-6">
+                <div className="flex items-center gap-4 text-sm text-[#666] mb-4">
+                  <div className="flex items-center gap-2">
+                    <div className="w-6 h-6 bg-[#c30011] rounded-full flex items-center justify-center">
+                      <span className="text-white text-xs font-bold">
+                        {article.author.split(' ').map(n => n[0]).join('')}
                       </span>
                     </div>
+                    <span>{article.author}</span>
                   </div>
-
-                  {/* Content */}
-                  <div className="p-8">
-                    {/* Meta Info */}
-                    <div className="flex items-center justify-between mb-4 text-sm text-[#666]">
-                      <div className="flex items-center gap-2">
-                        <User size={16} />
-                        <span>{post.author}</span>
-                      </div>
-                      <div className="flex items-center gap-4">
-                        <div className="flex items-center gap-1">
-                          <Calendar size={16} />
-                          <span>{post.date}</span>
-                        </div>
-                        <span>{post.readTime}</span>
-                      </div>
-                    </div>
-
-                    {/* Title */}
-                    <h3 className="text-2xl font-semibold text-[#000] mb-3 group-hover:text-[#c30011] transition-colors duration-300">
-                      {post.title}
-                    </h3>
-
-                    {/* Excerpt */}
-                    <p className="text-[#666] mb-6 leading-relaxed">
-                      {post.excerpt}
-                    </p>
-
-                    {/* Read More */}
-                    <div className="flex items-center justify-between">
-                      <div className="text-[#c30011] font-medium hover:text-[#a5000e] transition-colors duration-300 flex items-center gap-2 group/btn">
-                        Lire la suite
-                        <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform duration-200" />
-                      </div>
-                    </div>
-                  </div>
+                  <span>•</span>
+                  <span>{article.date}</span>
+                  <span>•</span>
+                  <span>{article.readTime}</span>
                 </div>
-              </Link>
+
+                <h3 className="text-xl font-bold text-[#000] mb-3 group-hover:text-[#c30011] transition-colors">
+                  {article.title}
+                </h3>
+
+                <p className="text-[#666] mb-4 line-clamp-3">
+                  {article.excerpt}
+                </p>
+
+                <a 
+                  href={article.link}
+                  className="inline-flex items-center gap-2 text-[#c30011] font-medium hover:gap-3 transition-all"
+                >
+                  Lire la suite
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
             </motion.article>
           ))}
         </div>
 
-        {/* View All Button - Updated to redirect to portfolio */}
+        {/* CTA */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <Link href="/portfolio">
-            <button className="bg-[#c30011] hover:bg-[#a5000e] text-white px-10 py-4 text-lg font-medium hover:-translate-y-1 rounded-full border-2 border-[#c30011] hover:border-[#a5000e] transition-all duration-300 inline-flex items-center gap-3 shadow-lg hover:shadow-xl">
-              Découvrir nos projets
-              <ArrowRight size={20} />
-            </button>
-          </Link>
+          <a
+            href="/blog"
+            className="inline-flex items-center gap-2 bg-[#c30011] text-white px-8 py-4 rounded-full font-medium hover:bg-[#a50010] transition-colors"
+          >
+            Voir tous les articles
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
         </motion.div>
       </div>
     </section>

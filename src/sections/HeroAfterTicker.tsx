@@ -8,21 +8,27 @@ export const HeroAfterTicker = () => {
   const stats = [
     {
       icon: Users,
-      number: "50+",
-      label: "Clients Satisfaits",
-      description: "Entreprises qui nous font confiance",
+      number: "30+",
+      label: "Clients accompagnés",
+      description: "Des entreprises, startups et indépendants qui ont choisi Easy Ways Studio pour concrétiser leurs projets digitaux.",
+    },
+    {
+      icon: Star,
+      number: "3+",
+      label: "Années d'expertise",
+      description: "Une jeune agence agile portée par des talents passionnés, cumulant des dizaines de projets livrés avec rigueur et créativité.",
     },
     {
       icon: Award,
-      number: "100+",
-      label: "Projets Réalisés",
-      description: "Solutions digitales livrées",
+      number: "20+",
+      label: "Projets livrés",
+      description: "Sites web, applications, identités visuelles, vidéos et stratégies digitales livrés avec succès à travers différents secteurs.",
     },
     {
       icon: Clock,
       number: "24/7",
-      label: "Support Client",
-      description: "Assistance technique continue",
+      label: "Engagement & disponibilité",
+      description: "Une équipe réactive, à l'écoute, prête à accompagner chaque client du brief à la mise en ligne et au-delà.",
     },
   ];
 
@@ -45,15 +51,16 @@ export const HeroAfterTicker = () => {
             </div>
 
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#000] mb-8 tracking-tight leading-tight">
-              Transformer les idées en <span className="italic font-bold text-[#c30011]">expériences digitales</span> marquantes
+              Créer des espaces qui{" "}
+              <span className="italic font-bold text-[#c30011]">inspirent</span> et transforment
             </h2>
 
             <p className="text-xl text-[#000] mb-8 leading-relaxed">
-              Chez Easy Ways Studio, chaque projet digital est pensé comme un levier de transformation pour les marques. Qu’il s’agisse d’un site web, d’une application mobile ou d’une identité visuelle, l’objectif est toujours le même : créer des expériences uniques, utiles et mémorables qui connectent les entreprises à leurs publics.
+              Chez Easy Ways Studio, nous croyons que le grand design a le pouvoir de transformer non seulement les espaces, mais les vies. Depuis plus d'une décennie, nous créons des environnements digitaux exceptionnels qui reflètent la personnalité de nos clients.
             </p>
 
             <p className="text-lg text-[#000] mb-8 leading-relaxed">
-              L’approche mêle stratégie, créativité et technologie, pour offrir des solutions sur mesure, esthétiques et performantes. De la première idée au livrable final, chaque étape est guidée par l’écoute, l’exigence de qualité et le souci du détail – afin de dépasser les attentes et propulser chaque projet vers le succès.
+              Notre approche combine des principes de design intemporels avec une esthétique contemporaine, garantissant que chaque projet soit à la fois fonctionnel et beau. Nous travaillons en étroite collaboration avec nos clients tout au long du processus.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -80,12 +87,13 @@ export const HeroAfterTicker = () => {
           >
             <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&h=600"
-                alt="Boîte de développement"
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+                alt="Solutions Digitales - Easy Ways Studio"
                 className="w-full h-[400px] object-cover"
               />
             </div>
           </motion.div>
+
         </div>
 
         {/* Stats Section */}
@@ -98,11 +106,11 @@ export const HeroAfterTicker = () => {
         >
           <div className="text-center mb-12">
             <h3 className="text-3xl sm:text-4xl font-bold text-[#000] mb-4">
-              Nos{" "}
-              <span className="italic font-bold text-[#c30011]">réalisations</span> en chiffres
+              Approuvé par des clients{" "}
+              <span className="italic font-bold text-[#c30011]">du monde entier</span>
             </h3>
             <p className="text-lg text-[#000] max-w-2xl mx-auto">
-              Des statistiques qui témoignent de notre engagement envers l'excellence et la satisfaction client.
+              Notre engagement envers l'excellence et l'attention aux détails nous ont valu la confiance de clients du monde entier.
             </p>
           </div>
 

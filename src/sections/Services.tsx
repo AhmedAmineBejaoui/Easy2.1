@@ -3,32 +3,32 @@ export function Services() {
         {
             name: "Développement Web",
             description:
-                "Le développement web consiste à concevoir et réaliser des sites et applications web interactifs et performants.",
+                "Sites web modernes, rapides et sur mesure, conçus pour valoriser l'image de marque, convertir les visiteurs en clients et soutenir la croissance en ligne.",
         },
         {
             name: "Développement Mobile",
             description:
-                "Le développement mobile consiste à créer des applications optimisées pour smartphones et tablettes.",
+                "Applications mobiles fluides et intuitives, idéales pour renforcer la présence digitale et offrir une expérience utilisateur optimale sur iOS et Android.",
         },
         {
             name: "Gestion des Réseaux Sociaux",
             description:
-                "Création, planification et optimisation de contenu pour engager une audience et renforcer la présence en ligne.",
+                "Contenu percutant, stratégie éditoriale et animation de communauté pour engager l'audience et bâtir une image de marque forte.",
         },
         {
             name: "Design",
             description:
-                "Le design graphique crée des visuels attractifs pour transmettre des messages sur divers supports.",
+                "Identité visuelle unique, designs élégants et cohérents pour capter l'attention et refléter les valeurs de l'entreprise.",
         },
         {
             name: "Montage Vidéo",
             description:
-                "Le montage vidéo consiste à assembler et éditer des séquences vidéo pour créer des contenus cohérents et captivants.",
+                "Vidéos dynamiques et professionnelles pour captiver l'audience, renforcer la crédibilité et maximiser l'impact en ligne.",
         },
         {
-            name: "Gestion Financière",
+            name: "Plan Marketing",
             description:
-                "Consiste à planifier, organiser et contrôler les ressources financières pour assurer la stabilité et la croissance.",
+                "Élaboration d'un plan marketing structuré pour atteindre les bons clients, optimiser la visibilité en ligne et générer des résultats concrets.",
         },
     ];
 
