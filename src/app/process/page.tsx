@@ -2,108 +2,107 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowLeft, MessageCircle, Palette, Hammer, Sparkles, CheckCircle, Clock } from "lucide-react";
+import { ArrowLeft, ClipboardList, LayoutDashboard, Code, Rocket, CheckCircle, Clock } from "lucide-react";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 
 const processImages = [
-  '1586023492125-27b2c045efd7',
-  '1618221195710-dd6b41faaea6',
-  '1507089947368-19c1da9775ae',
-  '1606744824163-985d376605aa',
-  '1503174971373-b1f69850bded'
+  '1525182008055-f88b95ff7980',
+  '1517433456452-f9633a875f6f',
+  '1519389950473-47ba0277781c',
+  '1502882702350-b0a20e28ad4d'
 ];
 
 export default function ProcessPage() {
   const processSteps = [
     {
       step: "01",
-      icon: MessageCircle,
-      title: "Découverte & Consultation",
+      icon: ClipboardList,
+      title: "Brief & cadrage",
       duration: "1-2 semaines",
-      description: "Nous commençons par une consultation approfondie pour comprendre votre vision, votre style de vie et vos besoins. Cela comprend des visites sur site, la création de planches d'ambiance et l'établissement des objectifs du projet.",
+      description:
+        "Collecte d’informations pour bien comprendre le besoin : objectifs, audience cible, contraintes et attentes. Élaboration d’un brief clair et structuré qui sert de guide tout au long du projet.",
       details: [
-        "Réunion de consultation initiale",
-        "Évaluation et mesures de l'espace",
-        "Analyse du style de vie et des préférences",
-        "Discussion du budget et du calendrier",
-        "Définition de la portée du projet"
+        "Analyse des objectifs et de l'audience",
+        "Inventaire des contraintes",
+        "Rédaction du brief détaillé",
+        "Validation avec les parties prenantes"
       ]
     },
     {
       step: "02",
-      icon: Palette,
-      title: "Développement du Design",
-      duration: "3-4 semaines",
-      description: "Notre équipe créative développe des concepts de design complets, incluant la planification de l'espace, les schémas de couleurs, la sélection des matériaux et des visualisations 3D détaillées.",
+      icon: LayoutDashboard,
+      title: "Stratégie & wireframes",
+      duration: "1-2 semaines",
+      description:
+        "Définition de l’arborescence, conception UX/UI optimisée et création de maquettes pour donner forme au projet.",
       details: [
-        "Présentation du concept de design",
-        "Planification de l'espace et layouts",
-        "Sélection des matériaux et finitions",
-        "Rendus 3D et visualisations",
-        "Raffinements du design et approbations"
+        "Élaboration du sitemap",
+        "Conception UX/UI",
+        "Wireframes et maquettes",
+        "Validation du concept"
       ]
     },
     {
       step: "03",
-      icon: CheckCircle,
-      title: "Planification & Approvisionnement",
-      duration: "2-3 semaines",
-      description: "Nous finalisons tous les détails du design, créons des dessins détaillés et commençons l'approvisionnement des matériaux, meubles et pièces personnalisées tout en coordonnant avec les entrepreneurs.",
+      icon: Code,
+      title: "Développement & révisions",
+      duration: "2 semaines - 2 mois",
+      description:
+        "Développement technique intégrant contenus et responsive design. Des cycles de feedback permettent d’ajuster avant la mise en ligne.",
       details: [
-        "Dessins techniques et spécifications",
-        "Approvisionnement mobilier et matériaux",
-        "Coordination des entrepreneurs",
-        "Planification du calendrier et de la logistique",
-        "Approbations finales et permis"
+        "Intégration HTML/CSS/JS",
+        "Animations et responsive",
+        "Feedbacks successifs",
+        "Validation de chaque version"
       ]
     },
     {
       step: "04",
-      icon: Hammer,
-      title: "Implémentation",
-      duration: "4-8 semaines",
-      description: "La transformation commence ! Nos chefs de projet supervisent toute la construction, l'installation et le styling pour s'assurer que chaque détail répond à nos standards élevés.",
+      icon: Rocket,
+      title: "Livraison & optimisation",
+      duration: "2-3 semaines",
+      description:
+        "Recette finale, mise en ligne et suivi après lancement avec optimisation continue pour maximiser l’impact.",
       details: [
-        "Travaux de construction et rénovation",
-        "Mises à jour régulières des progrès",
-        "Inspections de contrôle qualité",
-        "Livraison et installation du mobilier",
-        "Placement du styling et des accessoires"
-      ]
-    },
-    {
-      step: "05",
-      icon: Sparkles,
-      title: "Révélation Finale",
-      duration: "1 semaine",
-      description: "La conclusion excitante où nous dévoilons votre espace transformé ! Nous effectuons une visite finale et fournissons des instructions d'entretien pour votre nouvel environnement.",
-      details: [
-        "Touches finales de styling et finitions",
-        "Photographie professionnelle",
-        "Visite client et orientation",
-        "Instructions d'entretien et de maintenance",
-        "Célébration de l'achèvement du projet"
+        "Mise en ligne et tests finaux",
+        "Suivi de performance",
+        "Analyse des retours",
+        "Améliorations continues"
       ]
     }
   ];
 
   const faq = [
     {
-      question: "Combien de temps dure un projet typique ?",
-      answer: "La plupart des projets résidentiels prennent 3-6 mois de la consultation initiale à l'achèvement, selon la portée et la complexité. Les projets commerciaux peuvent prendre plus de temps."
+      question: "Combien de temps faut-il pour créer un site web complet ?",
+      answer:
+        "Le délai moyen dépend du type de projet. Pour un site vitrine, cela prend entre 1 à 3 semaines. Pour un site e-commerce ou une plateforme plus complexe, il faut compter 4 à 6 semaines. Nous définissons les délais ensemble dès le départ."
     },
     {
-      question: "Travaillez-vous avec les meubles existants ?",
-      answer: "Absolument ! Nous adorons incorporer des pièces qui ont une valeur sentimentale ou qui s'intègrent bien à notre vision de design. Nous évaluerons vos articles existants et les intégrerons de manière harmonieuse."
+      question: "Est-ce que je peux modifier mon site moi-même après livraison ?",
+      answer:
+        "Oui ! Nous utilisons des outils intuitifs (WordPress, Webflow, CMS custom...) pour vous permettre de mettre à jour facilement vos contenus, sans connaissances techniques. Une formation rapide est incluse."
     },
     {
-      question: "Qu'est-ce qui est inclus dans les frais de design ?",
-      answer: "Nos frais de design incluent toutes les consultations, le développement de concepts, les rendus 3D, les dessins détaillés, les spécifications de matériaux et la gestion de projet tout au long du processus."
+      question: "Proposez-vous des services d’hébergement et de maintenance ?",
+      answer:
+        "Absolument. Nous pouvons héberger votre site, assurer sa sécurité, sa rapidité et effectuer les mises à jour techniques. Des packs mensuels sont disponibles selon vos besoins."
     },
     {
-      question: "Pouvez-vous travailler avec mon entrepreneur ?",
-      answer: "Oui, nous pouvons travailler avec votre entrepreneur préféré ou recommander des professionnels de confiance de notre réseau. Nous coordonnons étroitement pour assurer une exécution sans faille."
+      question: "Puis-je vous confier à la fois le design, le développement et le contenu ?",
+      answer:
+        "Oui, nous offrons une solution clé en main. De la maquette jusqu’au référencement SEO et à la rédaction des textes, notre équipe s’occupe de tout pour vous livrer un site 100% prêt à l’emploi."
+    },
+    {
+      question: "Est-ce que mon site sera optimisé pour les mobiles et le SEO ?",
+      answer:
+        "Tous nos sites sont conçus pour être parfaitement responsives (mobile, tablette, desktop) et optimisés pour le référencement naturel (SEO). Votre visibilité est notre priorité."
+    },
+    {
+      question: "Puis-je vendre mes produits ou services directement via mon site ?",
+      answer:
+        "Oui, nous créons des boutiques en ligne complètes avec paiement sécurisé, gestion des stocks et interface utilisateur simple. Idéal pour lancer rapidement votre activité en ligne."
     }
   ];
 
@@ -133,10 +132,10 @@ export default function ProcessPage() {
               </span>
             </div>
             <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-normal text-[#000] mb-8 tracking-tight leading-tight">
-              De la vision à la <span className="italic font-bold text-[#c30011]">réalité</span>
+              🚀 Notre process en <span className="italic font-bold text-[#c30011]">4 étapes clés</span>
             </h1>
             <p className="text-xl text-[#666] leading-relaxed max-w-3xl mx-auto">
-              Notre processus éprouvé en 5 étapes garantit que votre parcours de design est fluide, transparent et aboutit à un espace qui dépasse vos attentes.
+              De l’analyse initiale à la mise en ligne, nous vous accompagnons pour donner vie à votre projet digital.
             </p>
           </motion.div>
         </div>
@@ -224,12 +223,12 @@ export default function ProcessPage() {
               Calendrier du <span className="italic font-bold text-[#c30011]">projet</span>
             </h2>
             <p className="text-lg text-[#666] max-w-3xl mx-auto">
-              Un calendrier typique de projet résidentiel du début à la fin.
+              Un calendrier de projet résidentiel typique du début à la fin.
             </p>
           </motion.div>
 
           <div className="bg-white rounded-3xl p-12 shadow-lg">
-            <div className="grid md:grid-cols-5 gap-8">
+            <div className="grid md:grid-cols-4 gap-8">
               {processSteps.map((step, index) => (
                 <motion.div
                   key={index}
