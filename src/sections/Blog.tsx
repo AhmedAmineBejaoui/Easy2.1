@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from 'framer-motion';
+import Link from "next/link";
 
 export const Blog = () => {
   const articles = [
@@ -61,13 +62,13 @@ export const Blog = () => {
         {/* Articles Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.map((article, index) => (
+            <Link href={article.link} key={index} className="contents">
             <motion.article
-              key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-3xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] transition-all duration-300 group"
+              className="bg-white rounded-3xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] transition-all duration-300 group cursor-pointer"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -117,6 +118,7 @@ export const Blog = () => {
                 </a>
               </div>
             </motion.article>
+            </Link>
           ))}
         </div>
 
