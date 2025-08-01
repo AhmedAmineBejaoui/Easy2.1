@@ -173,7 +173,6 @@ export default function ArticleStrategieContenu() {
         </div>
       </section>
 
-
       <Footer />
     </div>
   );
