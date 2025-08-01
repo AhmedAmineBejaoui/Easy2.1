@@ -10,7 +10,7 @@ const processImages = [
   '1525182008055-f88b95ff7980',
   '1517433456452-f9633a875f6f',
   '1519389950473-47ba0277781c',
-  '1502882702350-b0a20e28ad4d'
+  '1498050108023-c5249f4df085?auto=format&fit=crop&w=800&h=600"'
 ];
 
 export default function ProcessPage() {
@@ -132,7 +132,7 @@ export default function ProcessPage() {
               </span>
             </div>
             <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-normal text-[#000] mb-8 tracking-tight leading-tight">
-              🚀 Notre process en <span className="italic font-bold text-[#c30011]">4 étapes clés</span>
+              Notre process en <span className="italic font-bold text-[#c30011]">4 étapes clés</span>
             </h1>
             <p className="text-xl text-[#666] leading-relaxed max-w-3xl mx-auto">
               De l’analyse initiale à la mise en ligne, nous vous accompagnons pour donner vie à votre projet digital.
