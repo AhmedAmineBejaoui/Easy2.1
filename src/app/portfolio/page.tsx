@@ -34,7 +34,9 @@ export default function PortfolioPage() {
       name: "AutoPièces Express",
       category: "E-commerce / Automobile",
       year: "2025",
-      client: "شركة قطع الغيار العربية",
+
+      client: "SNT",
+
       service: "Création d’une boutique e-commerce sur mesure",
       description:
         "Conception et développement d’un site e-commerce intuitif dédié à la vente de pièces automobiles pour particuliers et professionnels.",
@@ -58,7 +60,9 @@ export default function PortfolioPage() {
       name: "Casa Del Mar",
       category: "Hôtellerie / Tourisme",
       year: "2025",
-      client: "دار البحر",
+
+      client: "NHE",
+
       service: "Site web de réservation pour maison d’hôtes",
       description:
         "Création d’un site élégant et immersif pour une maison d’hôtes en bord de mer, avec système de réservation intégré et expérience multilingue.",
@@ -82,7 +86,9 @@ export default function PortfolioPage() {
       name: "Easy Ways Skills",
       category: "E-learning / Éducation",
       year: "2025",
-      client: "استوديو إيزي وايز",
+
+      client: "digital startup",
+
       service: "Plateforme de cours en ligne avec assistant IA",
       description:
         "Mise en place d’une plateforme d’apprentissage intuitive avec un agent IA pour guider les apprenants et des cours catégorisés par niveau et objectif.",
@@ -106,7 +112,9 @@ export default function PortfolioPage() {
       name: "Abrify",
       category: "E-commerce / Automobile",
       year: "2025",
-      client: "أبريفاي",
+
+      client: "Abrify",
+
       service: "Site e-commerce pour housses de voiture",
       description:
         "Développement d’un site de vente en ligne spécialisé dans les housses de voiture personnalisées selon la marque et l’année.",
@@ -130,7 +138,9 @@ export default function PortfolioPage() {
       name: "Tunivente",
       category: "Marketplace / Logistique",
       year: "2025",
-      client: "تونيڤينت",
+
+      client: "Tunivente",
+
       service: "Plateforme de vente et livraison en temps réel",
       description:
         "Développement d’une plateforme de vente en ligne avec gestion de stock en temps réel et coordination entre marchands, clients et livreurs.",
@@ -154,7 +164,9 @@ export default function PortfolioPage() {
       name: "Tech Flow",
       category: "Technologie / B2B",
       year: "2025",
-      client: "تيك فلو",
+
+      client: "Tech Flow",
+
       service: "Site vitrine professionnel pour services technologiques",
       description:
         "Création d’un site clair pour présenter les services technologiques proposés avec navigation fluide et intégration de ressources externes.",

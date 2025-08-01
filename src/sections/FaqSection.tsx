@@ -5,11 +5,13 @@ import { ChevronDown, ChevronUp } from "lucide-react";
 import PortfolioGallery from "@/components/portfolio-gallery";
 import { Button } from "@/components/ui/button";
 
+
 export function PortfolioPage() {
   return <PortfolioGallery />;
 }
 
 export default function FaqSection() {
+
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
@@ -33,6 +35,7 @@ export default function FaqSection() {
       answer:
         "Oui, nous assurons un support technique, des mises à jour si besoin, et un accompagnement stratégique pour faire évoluer votre projet au fil du temps.",
     },
+
   ];
 
   const toggleFaq = (index: number) => {
@@ -57,11 +60,13 @@ export default function FaqSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold studio-primary mb-6">
+
             Vos questions répondues
           </h2>
           <p className="text-xl studio-text-light">
             Conseils d’experts pour réussir votre projet digital
           </p>
+
         </motion.div>
 
         <div className="space-y-6">
@@ -115,6 +120,7 @@ export default function FaqSection() {
             className="px-8 py-4 font-semibold hover-lift"
           >
             Contactez-nous
+
           </Button>
         </motion.div>
       </div>
