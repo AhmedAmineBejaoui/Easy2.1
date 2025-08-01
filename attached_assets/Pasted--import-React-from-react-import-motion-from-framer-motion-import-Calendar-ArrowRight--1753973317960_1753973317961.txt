@@ -1,0 +1,380 @@
+(import React from "react";
+import { motion } from "framer-motion";
+import { Calendar, ArrowRight, User } from "lucide-react";
+import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
+
+export default function BlogSection() {
+  const { t } = useTranslation();
+  
+  const blogPosts = [
+    {
+      id: 1,
+      slug: "power-of-color",
+      title: t('blog.post1Title'),
+      excerpt: t('blog.post1Excerpt'),
+      author: "Sarah Johnson",
+      date: "January 15, 2025",
+      category: t('blog.post1Category'),
+      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      readTime: t('blog.post1ReadTime')
+    },
+    {
+      id: 2,
+      slug: "small-spaces",
+      title: t('blog.post2Title'),
+      excerpt: t('blog.post2Excerpt'),
+      author: "Michael Chen",
+      date: "January 10, 2025",
+      category: t('blog.post2Category'),
+      image: "https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      readTime: t('blog.post2ReadTime')
+    },
+    {
+      id: 3,
+      slug: "modern-restoration",
+      title: t('blog.post3Title'),
+      excerpt: t('blog.post3Excerpt'),
+      author: "Emma Rodriguez",
+      date: "January 5, 2025",
+      category: t('blog.post3Category'),
+      image: "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      readTime: t('blog.post3ReadTime')
+    }
+  ];
+  return (
+    <section id="blog" className="py-24 bg-studio-warm-bg scroll-mt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <div className="mb-4">
+            <span className="inline-block px-6 py-2 bg-studio-primary text-white text-sm font-medium tracking-wide uppercase rounded-full">
+              {t('blog.badge')}
+            </span>
+          </div>
+          <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-normal text-studio-primary mb-6 tracking-tight">
+            {t('blog.heading')} <span className="italic font-bold">{t('blog.headingAccent')}</span>
+          </h2>
+          <p className="text-xl text-studio-text-light max-w-3xl mx-auto leading-relaxed">
+            {t('blog.description')}
+          </p>
+        </motion.div>
+
+        {/* Blog Posts Grid */}
+        <div className="grid lg:grid-cols-3 gap-8">
+          {blogPosts.map((post, index) => (
+            <motion.article
+              key={post.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+            >
+              <Link href={`/blog/${post.slug}`}>
+                <div className="group bg-card rounded-2xl overflow-hidden shadow-soft hover:shadow-3xl transition-all duration-500 hover-lift cursor-pointer h-full">
+                  {/* Image */}
+                  <div className="relative overflow-hidden h-64">
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute top-4 left-4">
+                      <span className="bg-studio-primary text-white px-3 py-1 rounded-full text-sm font-medium">
+                        {post.category}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-8">
+                    {/* Meta Info */}
+                    <div className="flex items-center justify-between mb-4 text-sm text-studio-text-light">
+                      <div className="flex items-center gap-2">
+                        <User size={16} />
+                        <span>{post.author}</span>
+                      </div>
+                      <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-1">
+                          <Calendar size={16} />
+                          <span>{post.date}</span>
+                        </div>
+                        <span>{post.readTime}</span>
+                      </div>
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="font-heading text-2xl font-semibold text-studio-primary mb-3 group-hover:text-studio-accent transition-colors duration-300">
+                      {post.title}
+                    </h3>
+
+                    {/* Excerpt */}
+                    <p className="text-studio-text-light mb-6 leading-relaxed">
+                      {post.excerpt}
+                    </p>
+
+                    {/* Read More */}
+                    <div className="flex items-center justify-between">
+                      <div className="text-studio-primary font-medium hover:text-studio-accent transition-colors duration-300 flex items-center gap-2 group/btn">
+                        {t('blog.readMore')}
+                        <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform duration-200" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </motion.article>
+          ))}
+        </div>
+
+        {/* View All Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="text-center mt-16"
+        >
+          <button className="bg-studio-primary hover:bg-studio-accent text-white px-10 py-4 text-lg font-medium hover-lift rounded-full border-2 border-studio-primary hover:border-studio-accent transition-all duration-300 inline-flex items-center gap-3">
+            {t('blog.viewAll')}
+            <ArrowRight size={20} />
+          </button>
+        </motion.div>
+      </div>
+    </section>
+  );
+}) et (import { motion } from "framer-motion";
+import { Link, useParams } from "wouter";
+import { ArrowLeft, Calendar, Clock, User, Share2, Heart, BookOpen } from "lucide-react";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
+import { useTranslation } from "react-i18next";
+
+
+export default function BlogDetailPage() {
+  const { t } = useTranslation();
+  const params = useParams();
+  const slug = params.slug;
+  const blogPosts = t('blogDetail.posts', { returnObjects: true }) as Record<string, any>;
+  const post = blogPosts[slug as keyof typeof blogPosts];
+
+  if (!post) {
+    return (
+      <div className="min-h-screen bg-studio-warm-bg flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold text-studio-primary mb-4">{t('blogDetail.articleNotFound')}</h1>
+          <Link href="/">
+            <button className="bg-studio-primary text-white px-6 py-3 rounded-full hover:bg-studio-accent transition-colors">
+              {t('aboutPage.backToHome')}
+            </button>
+          </Link>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-studio-warm-bg">
+      <Navigation />
+      
+      {/* Hero Section */}
+      <section className="pt-32 pb-12 bg-studio-warm-bg">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <Link href="/#blog">
+            <button className="flex items-center gap-2 text-studio-primary hover:text-studio-accent transition-colors duration-300 mb-8">
+              <ArrowLeft size={20} />
+              {t('blogDetail.backToBlog')}
+            </button>
+          </Link>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <div className="mb-6">
+              <span className="inline-block px-4 py-2 bg-studio-primary text-white text-sm font-medium tracking-wide uppercase rounded-full">
+                {post.category}
+              </span>
+            </div>
+            
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-normal text-studio-primary mb-6 tracking-tight leading-tight">
+              {post.title}
+            </h1>
+            
+            <p className="text-xl text-studio-text-light mb-8 leading-relaxed">
+              {post.subtitle}
+            </p>
+            
+            {/* Article Meta */}
+            <div className="flex flex-wrap items-center gap-6 text-studio-text-light mb-12">
+              <div className="flex items-center gap-2">
+                <User size={16} />
+                <span>{post.author}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Calendar size={16} />
+                <span>{post.date}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Clock size={16} />
+                <span>{post.readTime}</span>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Featured Image */}
+      <section className="pb-12">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative overflow-hidden rounded-3xl"
+          >
+            <img
+              src={post.image}
+              alt={post.title}
+              className="w-full h-[500px] sm:h-[600px] object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-studio-primary/20 to-transparent"></div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Article Content */}
+      <section className="pb-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="bg-card rounded-3xl p-8 sm:p-12 shadow-soft"
+          >
+            {/* Article Actions */}
+            <div className="flex items-center justify-between mb-8 pb-8 border-b border-studio-neutral">
+              <div className="flex items-center gap-4">
+                <button className="flex items-center gap-2 text-studio-text-light hover:text-studio-primary transition-colors">
+                  <Heart size={20} />
+                  <span>{t('blogDetail.like')}</span>
+                </button>
+                <button className="flex items-center gap-2 text-studio-text-light hover:text-studio-primary transition-colors">
+                  <Share2 size={20} />
+                  <span>{t('blogDetail.share')}</span>
+                </button>
+              </div>
+              <div className="flex items-center gap-2 text-studio-text-light">
+                <BookOpen size={16} />
+                <span>{post.readTime}</span>
+              </div>
+            </div>
+            
+            {/* Content */}
+            <div 
+              className="prose prose-lg max-w-none
+                prose-headings:font-heading prose-headings:text-studio-primary prose-headings:font-normal
+                prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
+                prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
+                prose-p:text-studio-text-light prose-p:leading-relaxed prose-p:mb-6
+                prose-ul:text-studio-text-light prose-li:mb-2
+                prose-strong:text-studio-primary prose-strong:font-semibold"
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Related Articles */}
+      <section className="py-20 bg-studio-neutral">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="font-heading text-4xl sm:text-5xl font-normal text-studio-primary mb-6">
+              {t('blogDetail.relatedHeading')} <span className="italic font-bold">{t('blogDetail.relatedHeadingAccent')}</span>
+            </h2>
+            <p className="text-lg text-studio-text-light max-w-3xl mx-auto">
+              {t('blogDetail.relatedDescription')}
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {Object.entries(blogPosts)
+              .filter(([key]) => key !== slug)
+              .slice(0, 3)
+              .map(([relatedSlug, relatedPost], index) => (
+              <motion.div
+                key={relatedSlug}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Link href={`/blog/${relatedSlug}`}>
+                  <article className="bg-card rounded-3xl overflow-hidden shadow-soft hover-lift group cursor-pointer">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={relatedPost.image}
+                        alt={relatedPost.title}
+                        className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute top-4 left-4">
+                        <span className="px-3 py-1 bg-studio-primary text-white text-sm font-medium rounded-full">
+                          {relatedPost.category}
+                        </span>
+                      </div>
+                    </div>
+                    
+                    <div className="p-8">
+                      <div className="flex items-center gap-4 text-sm text-studio-text-light mb-4">
+                        <div className="flex items-center gap-1">
+                          <User size={14} />
+                          {relatedPost.author}
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Calendar size={14} />
+                          {relatedPost.date}
+                        </div>
+                        <div className="flex items-center gap-1">
+                          <Clock size={14} />
+                          {relatedPost.readTime}
+                        </div>
+                      </div>
+                      
+                      <h3 className="font-heading text-2xl font-normal text-studio-primary mb-3 group-hover:text-studio-accent transition-colors">
+                        {relatedPost.title}
+                      </h3>
+                      
+                      <p className="text-studio-text-light mb-4 leading-relaxed">
+                        {relatedPost.excerpt}
+                      </p>
+                      
+                      <div className="flex items-center text-studio-primary group-hover:text-studio-accent transition-colors">
+                        <span className="font-medium">{t('blog.readMore')}</span>
+                        <ArrowLeft size={16} className="ml-2 rotate-180" />
+                      </div>
+                    </div>
+                  </article>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+}) je veut ces codes apres Testimonials.tsx et avnt le contact
