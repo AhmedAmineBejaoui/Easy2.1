@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from 'framer-motion';
+import Link from "next/link";
 
 export const Blog = () => {
   const articles = [
@@ -12,7 +13,7 @@ export const Blog = () => {
       readTime: "5 min de lecture",
       excerpt: "À l'ère du digital, ne pas avoir de site web revient à ne pas exister. Découvrez pourquoi un site web professionnel est un investissement stratégique incontournable.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
-      link: "#"
+      link: "/blog/site-web-professionnel-2025"
     },
     {
       title: "6 tendances web design qui vont marquer 2025",
@@ -22,7 +23,7 @@ export const Blog = () => {
       readTime: "7 min de lecture",
       excerpt: "Le design web évolue vite. Découvrez les 6 tendances design qui feront la différence cette année : typographies audacieuses, mode sombre, micro-interactions et plus.",
       image: "https://images.unsplash.com/photo-1559028006-448665bd7c7f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
-      link: "#"
+      link: "/blog/tendances-web-design-2025"
     },
     {
       title: "Comment une stratégie de contenu transforme votre présence en ligne",
@@ -32,7 +33,7 @@ export const Blog = () => {
       readTime: "6 min de lecture",
       excerpt: "Un beau site, c'est bien. Un site qui parle, qui vit, qui attire, c'est encore mieux. Découvrez comment le contenu peut transformer votre présence digitale.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=300",
-      link: "#"
+      link: "/blog/strategie-contenu-presence-en-ligne"
     }
   ];
 
@@ -61,13 +62,13 @@ export const Blog = () => {
         {/* Articles Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {articles.map((article, index) => (
+            <Link href={article.link} key={index} className="contents">
             <motion.article
-              key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-3xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] transition-all duration-300 group"
+              className="bg-white rounded-3xl overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.15)] transition-all duration-300 group cursor-pointer"
             >
               <div className="relative overflow-hidden">
                 <img
@@ -117,6 +118,7 @@ export const Blog = () => {
                 </a>
               </div>
             </motion.article>
+            </Link>
           ))}
         </div>
 
