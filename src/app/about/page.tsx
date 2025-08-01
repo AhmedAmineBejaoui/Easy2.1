@@ -2,28 +2,26 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, Award, Users, Star, Clock, Target, Eye, Heart } from "lucide-react";
-import { useTranslation } from "react-i18next";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
 
 export default function AboutPage() {
-  const { t } = useTranslation();
 
   const values = [
     {
       icon: Target,
-      title: t('aboutPage.value1Title'),
-      description: t('aboutPage.value1Description')
+      title: "Innovation",
+      description: "Conception de solutions créatives adaptées aux enjeux actuels"
     },
     {
       icon: Eye,
-      title: t('aboutPage.value2Title'),
-      description: t('aboutPage.value2Description')
+      title: "Clarté & transparence",
+      description: "Processus défini et responsabilités claires à chaque étape"
     },
     {
       icon: Heart,
-      title: t('aboutPage.value3Title'),
-      description: t('aboutPage.value3Description')
+      title: "Performance orientée résultat",
+      description: "Optimisation continue et suivi des indicateurs clés"
     }
   ];
 
@@ -36,7 +34,7 @@ export default function AboutPage() {
           <Link href="/">
             <button className="flex items-center gap-2 text-studio-primary hover:text-studio-accent transition-colors duration-300 mb-8">
               <ArrowLeft size={20} />
-              {t('aboutPage.backToHome')}
+              Retour à l'accueil
             </button>
           </Link>
 
@@ -48,11 +46,11 @@ export default function AboutPage() {
           >
             <div className="mb-6">
               <span className="inline-block px-6 py-2 bg-studio-primary text-white text-sm font-medium tracking-wide uppercase rounded-full">
-                {t('aboutPage.badge')}
+                À PROPOS
               </span>
             </div>
             <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-normal text-studio-primary mb-8 tracking-tight leading-tight">
-              {t('aboutPage.heading')} <span className="italic font-bold">{t('aboutPage.headingAccent')}</span> {t('aboutPage.headingAfter')}
+              Notre <span className="italic font-bold">histoire</span> digitale
             </h1>
           </motion.div>
         </div>
@@ -69,7 +67,7 @@ export default function AboutPage() {
               viewport={{ once: true }}
             >
               <h2 className="font-heading text-4xl sm:text-5xl font-normal text-studio-primary mb-8">
-                {t('aboutPage.missionHeading')} <span className="italic font-bold">{t('aboutPage.missionHeadingAccent')}</span>
+                Notre Mission
               </h2>
               <div className="space-y-4 text-lg text-studio-text-light leading-relaxed">
                 <p>🧠 Pourquoi on fait ce qu’on fait</p>
@@ -123,10 +121,10 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
             <h2 className="font-heading text-4xl sm:text-5xl font-normal text-studio-primary mb-6">
-              {t('aboutPage.valuesHeading')} <span className="italic font-bold">{t('aboutPage.valuesHeadingAccent')}</span>
+              Nos valeurs fondamentales
             </h2>
             <p className="text-lg text-studio-text-light max-w-3xl mx-auto">
-              {t('aboutPage.valuesDescription')}
+              Celles qui guident chacun de nos projets
             </p>
           </motion.div>
 
@@ -167,15 +165,20 @@ export default function AboutPage() {
             className="text-center mb-16"
           >
             <h2 className="font-heading text-4xl sm:text-5xl font-normal mb-6">
-              {t('aboutPage.numbersHeading')} <span className="italic font-bold">{t('aboutPage.numbersHeadingAccent')}</span>
+              Nos chiffres clés
             </h2>
             <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              {t('aboutPage.numbersDescription')}
+              Quelques statistiques sur notre activité
             </p>
           </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[{ icon: Users, number: t('about.stat1Number'), label: t('about.stat1Label') }, { icon: Award, number: t('about.stat2Number'), label: t('about.stat2Label') }, { icon: Star, number: t('about.stat3Number'), label: t('about.stat3Label') }, { icon: Clock, number: t('about.stat4Number'), label: t('about.stat4Label') }].map((stat, index) => {
+            {[
+              { icon: Users, number: "200+", label: "Clients" },
+              { icon: Award, number: "50+", label: "Projets" },
+              { icon: Star, number: "5/5", label: "Satisfaction" },
+              { icon: Clock, number: "8 ans", label: "d'expérience" }
+            ].map((stat, index) => {
               const IconComponent = stat.icon;
               return (
                 <motion.div

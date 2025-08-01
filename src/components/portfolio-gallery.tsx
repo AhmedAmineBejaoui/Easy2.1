@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ArrowLeft, ArrowRight } from "lucide-react";
-import { useTranslation } from "react-i18next";
+
 
 interface Project {
   id: string;
@@ -20,7 +20,7 @@ interface Project {
 }
 
 export default function PortfolioGallery() {
-  const { t } = useTranslation();
+
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -173,25 +173,19 @@ export default function PortfolioGallery() {
   ];
 
   const categories = [
-    t('portfolio.categoryAll'),
-    t('portfolio.categoryResidential'),
-    t('portfolio.categoryCommercial'),
-    t('portfolio.categoryEcoFriendly'),
-    t('portfolio.categoryLighting'),
+
+    "Tous",
+    "Résidentiel",
+    "Commercial",
+    "Éco-responsable",
+    "Éclairage",
   ];
 
   const filteredProjects =
-    selectedCategory === t('portfolio.categoryAll')
+    selectedCategory === "Tous"
       ? projects
-      : projects.filter((project) => {
-          const categoryMap: { [key: string]: string } = {
-            Residential: t('portfolio.categoryResidential'),
-            Commercial: t('portfolio.categoryCommercial'),
-            'Eco-Friendly': t('portfolio.categoryEcoFriendly'),
-            Lighting: t('portfolio.categoryLighting'),
-          };
-          return categoryMap[project.category] === selectedCategory;
-        });
+      : projects.filter((project) => project.category === selectedCategory);
+
 
   const nextImage = () => {
     if (selectedProject) {
@@ -226,10 +220,12 @@ export default function PortfolioGallery() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-bold studio-primary mb-6">
-              {t('portfolio.heading')}
+
+              Projets récents
             </h2>
             <p className="text-xl studio-text-light mb-8">
-              {t('portfolio.description')}
+              Aperçu de nos dernières réalisations
+
             </p>
           </motion.div>
 
@@ -279,8 +275,10 @@ export default function PortfolioGallery() {
                   </div>
                   <p className="studio-text-light mb-4">{project.description}</p>
                   <div className="text-sm studio-text-light">
-                    <p>{t('portfolio.client')}: {project.client}</p>
-                    <p>{t('portfolio.year')}: {project.year}</p>
+
+                    <p>Client: {project.client}</p>
+                    <p>Année: {project.year}</p>
+
                   </div>
                 </div>
               </motion.div>
@@ -344,19 +342,20 @@ export default function PortfolioGallery() {
                 <div className="p-8">
                   <div className="grid md:grid-cols-4 gap-4 mb-8 text-sm">
                     <div>
-                      <p className="font-semibold studio-primary">{t('portfolio.client')}</p>
+                    <p className="font-semibold studio-primary">Client</p>
                       <p className="studio-text-light">{selectedProject.client}</p>
                     </div>
                     <div>
-                      <p className="font-semibold studio-primary">{t('portfolio.service')}</p>
+                    <p className="font-semibold studio-primary">Service</p>
                       <p className="studio-text-light">{selectedProject.service}</p>
                     </div>
                     <div>
-                      <p className="font-semibold studio-primary">{t('portfolio.category')}</p>
+                    <p className="font-semibold studio-primary">Catégorie</p>
                       <p className="studio-text-light">{selectedProject.category}</p>
                     </div>
                     <div>
-                      <p className="font-semibold studio-primary">{t('portfolio.year')}</p>
+                    <p className="font-semibold studio-primary">Année</p>
+
                       <p className="studio-text-light">{selectedProject.year}</p>
                     </div>
                   </div>
@@ -365,22 +364,26 @@ export default function PortfolioGallery() {
 
                   <div className="space-y-6">
                     <div>
-                      <h3 className="text-xl font-semibold studio-primary mb-3">{t('portfolio.projectOverview')}</h3>
+                      <h3 className="text-xl font-semibold studio-primary mb-3">Aperçu du projet</h3>
+
                       <p className="studio-text-light leading-relaxed">{selectedProject.description}</p>
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-semibold studio-primary mb-3">{t('portfolio.challenge')}</h3>
+                      <h3 className="text-xl font-semibold studio-primary mb-3">Défi</h3>
+
                       <p className="studio-text-light leading-relaxed">{selectedProject.challenge}</p>
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-semibold studio-primary mb-3">{t('portfolio.solution')}</h3>
+                      <h3 className="text-xl font-semibold studio-primary mb-3">Solution</h3>
+
                       <p className="studio-text-light leading-relaxed">{selectedProject.solution}</p>
                     </div>
 
                     <div>
-                      <h3 className="text-xl font-semibold studio-primary mb-3">{t('portfolio.impact')}</h3>
+                      <h3 className="text-xl font-semibold studio-primary mb-3">Impact</h3>
+
                       <p className="studio-text-light leading-relaxed">{selectedProject.impact}</p>
                     </div>
                   </div>

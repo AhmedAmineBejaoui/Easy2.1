@@ -119,7 +119,6 @@ export default function FaqSection() {
             onClick={() => scrollToSection("contact")}
             className="px-8 py-4 font-semibold hover-lift"
           >
-
             Contactez-nous
 
           </Button>
