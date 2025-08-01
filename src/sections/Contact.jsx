@@ -42,7 +42,7 @@ export function Contact() {
     };
 
     return (
-        <section className="pt-10 pb-20 px-8 md:pd-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#EAEEFE_5%,#ff0000_88%)] overflow-x-clip">
+        <section className="pt-10 pb-20 px-8 md:pd-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#ffffff_5%,#c30011_88%)] overflow-x-clip">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-8">
                     <div className="text-4xl font-bold mb-2 text-[#000]">Contactez-nous</div>

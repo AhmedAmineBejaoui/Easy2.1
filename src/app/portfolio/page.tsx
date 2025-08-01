@@ -208,11 +208,11 @@ export default function PortfolioPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#EAEEFE]">
+    <div className="min-h-screen bg-white">
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-[#EAEEFE]">
+      <section className="pt-32 pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/">
             <button className="flex items-center gap-2 text-[#c30011] hover:text-[#a5000e] transition-colors duration-300 mb-8">

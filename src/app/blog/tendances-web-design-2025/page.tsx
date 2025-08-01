@@ -9,11 +9,11 @@ import { Footer } from "@/sections/Footer";
 
 export default function ArticleTendancesWebDesign() {
   return (
-    <div className="min-h-screen bg-[#EAEEFE]">
+    <div className="min-h-screen bg-white">
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-12 bg-[#EAEEFE]">
+      <section className="pt-32 pb-12 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <Link href="/">
