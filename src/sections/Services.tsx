@@ -33,7 +33,7 @@ export function Services() {
     ];
 
     return (
-        <section className="bg-gray-50 py-16 px-6 sm:px-12 lg:px-24">
+        <section className="bg-white py-16 px-6 sm:px-12 lg:px-24">
             <div className="max-w-7xl mx-auto text-center">
                 <h2 className="section-title">Nos Services</h2>
                 <p className="section-description">
@@ -46,10 +46,10 @@ export function Services() {
                         key={index}
                         className="group bg-white shadow-md rounded-lg p-6 hover:shadow-lg transform hover:scale-105 transition-all duration-300"
                     >
-                        <div className="w-16 h-16 mx-auto flex items-center justify-center bg-red-700 text-white rounded-full">
+                        <div className="w-16 h-16 mx-auto flex items-center justify-center bg-[#c30011] text-white rounded-full">
                             <span className="text-2xl font-semibold">{index + 1}</span>
                         </div>
-                        <h3 className="mt-4 text-xl font-bold text-gray-800 group-hover:text-red-700">
+                        <h3 className="mt-4 text-xl font-bold text-gray-800 group-hover:text-[#c30011]">
                             {service.name}
                         </h3>
                         <p className="mt-2 text-gray-600">{service.description}</p>

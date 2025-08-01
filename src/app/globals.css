@@ -8,11 +8,11 @@
     }
 
     .btn-primary {
-        @apply bg-black text-white;
+        @apply bg-[#c30011] text-white;
     }
 
     .btn-text {
-        @apply text-black bg-transparent;
+        @apply text-[#c30011] bg-transparent;
     }
 
     .logo-ticker image {
@@ -28,7 +28,7 @@
     }
 
     .section-description {
-        @apply text-center text-[22px] leading-[30px] tracking-tight text-[#dc143c];
+        @apply text-center text-[22px] leading-[30px] tracking-tight text-[#c30011];
     }
 
     .section-heading {

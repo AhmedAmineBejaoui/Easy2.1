@@ -107,11 +107,11 @@ export default function ProcessPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#EAEEFE]">
+    <div className="min-h-screen bg-white">
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-[#EAEEFE]">
+      <section className="pt-32 pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/">
             <button className="flex items-center gap-2 text-[#c30011] hover:text-[#a5000e] transition-colors duration-300 mb-8">
@@ -158,7 +158,7 @@ export default function ProcessPage() {
                 >
                   <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                     <div className="flex items-center gap-4 mb-6">
-                      <div className="text-6xl font-bold text-[#EAEEFE]">{step.step}</div>
+                      <div className="text-6xl font-bold text-white">{step.step}</div>
                       <div className="w-16 h-16 bg-[#c30011] rounded-2xl flex items-center justify-center">
                         <IconComponent className="text-white" size={32} />
                       </div>
@@ -210,7 +210,7 @@ export default function ProcessPage() {
       </section>
 
       {/* Timeline Overview */}
-      <section className="py-20 bg-[#EAEEFE]">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -276,7 +276,7 @@ export default function ProcessPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-[#EAEEFE] p-8 rounded-3xl"
+                className="bg-white p-8 rounded-3xl"
               >
                 <h3 className="text-xl font-semibold text-[#000] mb-4">{item.question}</h3>
                 <p className="text-[#666] leading-relaxed">{item.answer}</p>
@@ -302,7 +302,7 @@ export default function ProcessPage() {
               Discutons de votre vision et créons un espace qui reflète vraiment qui vous êtes.
             </p>
             <a href="#contact">
-              <button className="bg-white text-[#c30011] hover:bg-[#EAEEFE] px-8 py-4 text-lg font-medium rounded-full transition-all duration-300">
+              <button className="bg-white text-[#c30011] hover:bg-red-100 px-8 py-4 text-lg font-medium rounded-full transition-all duration-300">
                 Commencer mon projet
               </button>
             </a>

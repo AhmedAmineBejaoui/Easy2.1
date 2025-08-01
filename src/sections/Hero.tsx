@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export const Hero = () => {
   return (
-    <section className='pt-8 pb-20 md:pt-5 md:pd-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#c30011,#EAEEFE_100%)] overflow-x-clip'>
+    <section className='pt-8 pb-20 md:pt-5 md:pd-10 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#c30011,#ffffff_100%)] overflow-x-clip'>
       <div className="container">
         <div className='md:flex items-center'>
           <div className='md:w-[478px]'>
@@ -20,7 +20,7 @@ export const Hero = () => {
 
             <div className="flex gap-2 items-center mt-[30px] flex-wrap">
               <Link href="/portfolio">
-                <button className="bg-black text-white px-4 py-2 rounded-lg font-medium tracking-tight">
+                <button className="bg-[#c30011] text-white px-4 py-2 rounded-lg font-medium tracking-tight">
                   découvrir nos projets
                 </button>
               </Link>

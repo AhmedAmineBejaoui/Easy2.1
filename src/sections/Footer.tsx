@@ -11,7 +11,7 @@ const scrollToSection = (id: string) => {
 
 export const Footer = () => {
   return (
-    <footer className="bg-black text-[#BCBCBC] text-sm py-10 text-center">
+    <footer className="bg-[#c30011] text-white text-sm py-10 text-center">
       <div className="container">
         {/* Logo Section */}
         <div className="inline-flex p-1 relative before:content-[''] before:top-2 before:bottom-0 before:h-full before:blur before:w-full before:bg-red-500 before:absolute">

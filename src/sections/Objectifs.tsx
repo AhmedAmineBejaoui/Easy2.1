@@ -2,7 +2,7 @@ import { FaBullseye, FaLightbulb, FaRocket, FaHandshake } from 'react-icons/fa';
 
 export const Objectifs = () => {
     return (
-        <section className="bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#EAEEFE_5%,#ff0000_88%)] text-black py-16 px-6 sm:px-12 lg:px-24">
+        <section className="bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#ffffff_5%,#c30011_88%)] text-black py-16 px-6 sm:px-12 lg:px-24">
             <div className="max-w-7xl mx-auto text-center">
                 <h2 className="text-4xl font-bold mb-4">Nos Objectifs</h2>
                 <p className="text-lg mb-12">

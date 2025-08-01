@@ -23,7 +23,7 @@ export const Header = () => {
   return (
     <header className="sticky top-0 backdrop-blur-sm z-20">
       {/* Top Bar */}
-      <div className="flex justify-center items-center py-3 bg-black text-white text-sm gap-6">
+      <div className="flex justify-center items-center py-3 bg-[#c30011] text-white text-sm gap-6">
         <div className="flex items-center gap-2 text-white/60 hidden md:flex">
           <FontAwesomeIcon icon={faEnvelope} className="text-white w-6 h-6" />
           <p>studio@easyways.tn</p>
@@ -67,7 +67,7 @@ export const Header = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="bg-black text-white px-4 py-2 rounded-lg font-medium tracking-tight">
+                <button className="bg-[#c30011] text-white px-4 py-2 rounded-lg font-medium tracking-tight">
                   Commencer
                 </button>
               </a>
@@ -87,7 +87,7 @@ export const Header = () => {
                 rel="noopener noreferrer"
               >
                 <div className="flex justify-center">
-                  <button className="bg-black text-white px-4 py-2 rounded-lg font-medium tracking-tight">
+                  <button className="bg-[#c30011] text-white px-4 py-2 rounded-lg font-medium tracking-tight">
                     Commencer
                   </button>
                 </div>
