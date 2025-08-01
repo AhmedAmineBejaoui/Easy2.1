@@ -19,12 +19,6 @@ export const HeroAfterTicker = () => {
       description: "Solutions digitales livrées",
     },
     {
-      icon: Star,
-      number: "15+",
-      label: "Années d'Excellence",
-      description: "D'expérience dans le digital",
-    },
-    {
       icon: Clock,
       number: "24/7",
       label: "Support Client",
@@ -51,16 +45,15 @@ export const HeroAfterTicker = () => {
             </div>
 
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#000] mb-8 tracking-tight leading-tight">
-              Créer des espaces qui{" "}
-              <span className="italic font-bold text-[#c30011]">inspirent</span> et transforment
+              Transformer les idées en <span className="italic font-bold text-[#c30011]">expériences digitales</span> marquantes
             </h2>
 
             <p className="text-xl text-[#000] mb-8 leading-relaxed">
-              Chez Easy Ways Studio, nous croyons que le grand design a le pouvoir de transformer non seulement les espaces, mais les vies. Depuis plus d'une décennie, nous créons des environnements digitaux exceptionnels qui reflètent la personnalité de nos clients.
+              Chez Easy Ways Studio, chaque projet digital est pensé comme un levier de transformation pour les marques. Qu’il s’agisse d’un site web, d’une application mobile ou d’une identité visuelle, l’objectif est toujours le même : créer des expériences uniques, utiles et mémorables qui connectent les entreprises à leurs publics.
             </p>
 
             <p className="text-lg text-[#000] mb-8 leading-relaxed">
-              Notre approche combine des principes de design intemporels avec une esthétique contemporaine, garantissant que chaque projet soit à la fois fonctionnel et beau. Nous travaillons en étroite collaboration avec nos clients tout au long du processus.
+              L’approche mêle stratégie, créativité et technologie, pour offrir des solutions sur mesure, esthétiques et performantes. De la première idée au livrable final, chaque étape est guidée par l’écoute, l’exigence de qualité et le souci du détail – afin de dépasser les attentes et propulser chaque projet vers le succès.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -87,14 +80,10 @@ export const HeroAfterTicker = () => {
           >
             <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                alt="Solutions Digitales - Easy Ways Studio"
+                src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&h=600"
+                alt="Boîte de développement"
                 className="w-full h-[400px] object-cover"
               />
-              <div className="absolute bottom-6 left-6 bg-white rounded-xl px-6 py-4 shadow-lg">
-                <div className="text-3xl font-bold text-[#c30011] mb-1">15+</div>
-                <div className="text-sm text-gray-600 font-medium">Années d'Excellence</div>
-              </div>
             </div>
           </motion.div>
         </div>
