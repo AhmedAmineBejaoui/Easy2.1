@@ -100,8 +100,8 @@ export default function AboutPage() {
               className="relative"
             >
               <img
-                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
-                alt="Design process"
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&h=600"
+                alt="Programming illustration"
                 className="w-full h-[500px] object-cover rounded-3xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-studio-primary/20 to-transparent rounded-3xl"></div>

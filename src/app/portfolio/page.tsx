@@ -285,7 +285,7 @@ export default function PortfolioPage() {
               >
                 <img
                   src={project.mainImage}
-                  alt={`${project.name} interior design`}
+                  alt={`${project.name} main image`}
                   className="w-full h-64 object-cover"
                 />
                 <div className="p-6">
