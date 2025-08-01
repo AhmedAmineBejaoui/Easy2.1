@@ -27,38 +27,6 @@ export default function AboutPage() {
     }
   ];
 
-  const timeline = [
-    {
-      year: t('aboutPage.timeline1Year'),
-      title: t('aboutPage.timeline1Title'),
-      description: t('aboutPage.timeline1Description')
-    },
-    {
-      year: t('aboutPage.timeline2Year'),
-      title: t('aboutPage.timeline2Title'),
-      description: t('aboutPage.timeline2Description')
-    },
-    {
-      year: t('aboutPage.timeline3Year'),
-      title: t('aboutPage.timeline3Title'),
-      description: t('aboutPage.timeline3Description')
-    },
-    {
-      year: t('aboutPage.timeline4Year'),
-      title: t('aboutPage.timeline4Title'),
-      description: t('aboutPage.timeline4Description')
-    },
-    {
-      year: t('aboutPage.timeline5Year'),
-      title: t('aboutPage.timeline5Title'),
-      description: t('aboutPage.timeline5Description')
-    },
-    {
-      year: t('aboutPage.timeline6Year'),
-      title: t('aboutPage.timeline6Title'),
-      description: t('aboutPage.timeline6Description')
-    }
-  ];
   return (
     <div className="min-h-screen bg-studio-warm-bg">
       <Header />
@@ -86,9 +54,6 @@ export default function AboutPage() {
             <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-normal text-studio-primary mb-8 tracking-tight leading-tight">
               {t('aboutPage.heading')} <span className="italic font-bold">{t('aboutPage.headingAccent')}</span> {t('aboutPage.headingAfter')}
             </h1>
-            <p className="text-xl text-studio-text-light leading-relaxed max-w-3xl mx-auto">
-              {t('aboutPage.description')}
-            </p>
           </motion.div>
         </div>
       </section>
@@ -106,12 +71,27 @@ export default function AboutPage() {
               <h2 className="font-heading text-4xl sm:text-5xl font-normal text-studio-primary mb-8">
                 {t('aboutPage.missionHeading')} <span className="italic font-bold">{t('aboutPage.missionHeadingAccent')}</span>
               </h2>
-              <p className="text-lg text-studio-text-light mb-6 leading-relaxed">
-                {t('aboutPage.missionDescription1')}
-              </p>
-              <p className="text-lg text-studio-text-light leading-relaxed">
-                {t('aboutPage.missionDescription2')}
-              </p>
+              <div className="space-y-4 text-lg text-studio-text-light leading-relaxed">
+                <p>🧠 Pourquoi on fait ce qu’on fait</p>
+                <p>
+                  Chaque projet est pensé comme un levier stratégique pour aider les marques à se démarquer,
+                  à optimiser leur visibilité et à toucher efficacement leurs audiences. L’approche est centrée
+                  sur l’écoute du client, l’analyse de ses objectifs et la transformation de ses idées en
+                  solutions tangibles et impactantes.
+                </p>
+                <p>💡 Valeurs fondamentales</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Innovation : conception de solutions créatives qui répondent aux enjeux actuels</li>
+                  <li>
+                    Clarté & transparence : processus défini, livrables clairs, responsabilités attribuées à
+                    chaque étape
+                  </li>
+                  <li>
+                    Performance orientée résultat : optimisation continue après lancement, mise en place
+                    d’indicateurs et ajustements réguliers
+                  </li>
+                </ul>
+              </div>
             </motion.div>
 
             <motion.div
@@ -174,56 +154,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="font-heading text-4xl sm:text-5xl font-normal text-studio-primary mb-6">
-              {t('aboutPage.journeyHeading')} <span className="italic font-bold">{t('aboutPage.journeyHeadingAccent')}</span>
-            </h2>
-            <p className="text-lg text-studio-text-light max-w-3xl mx-auto">
-              {t('aboutPage.journeyDescription')}
-            </p>
-          </motion.div>
 
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-studio-neutral hidden lg:block"></div>
-
-            <div className="space-y-12">
-              {timeline.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className={`flex items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
-                >
-                  <div className="flex-1 lg:px-8">
-                    <div className={`bg-studio-neutral p-8 rounded-3xl shadow-soft ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
-                      <div className="text-3xl font-bold text-studio-primary mb-2">{item.year}</div>
-                      <h3 className="text-xl font-semibold text-studio-primary mb-3">{item.title}</h3>
-                      <p className="text-studio-text-light leading-relaxed">{item.description}</p>
-                    </div>
-                  </div>
-
-                  {/* Timeline dot */}
-                  <div className="hidden lg:block w-4 h-4 bg-studio-primary rounded-full relative z-10"></div>
-
-                  <div className="flex-1 lg:px-8"></div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Stats */}
       <section className="py-20 bg-studio-primary text-white">
