@@ -44,10 +44,10 @@ export default function PortfolioPage() {
         "Site responsive avec moteur de recherche avancé, filtres par modèle et année de véhicule, espace client et tableau de bord de commandes.",
       mainImage: "/images/projects/img1.png",
       images: [
-        "/images/projects/image1.png",
-        "/images/projects/image-1.png",
-        "/images/projects/image-1.png",
-        "/images/projects/image-1.png"
+        "https://picsum.photos/seed/autoparts1/800/600",
+        "https://picsum.photos/seed/autoparts2/800/600",
+        "https://picsum.photos/seed/autoparts3/800/600",
+        "https://picsum.photos/seed/autoparts4/800/600",
       ],
     },
     {
@@ -68,10 +68,10 @@ export default function PortfolioPage() {
 
       mainImage: "/images/projects/img2.png",
       images: [
-        "/images/projects/image-2.png",
-        "/images/projects/image-2.png",
-        "/images/projects/image-2.png",
-        "/images/projects/image-2.png"
+        "https://picsum.photos/seed/hotel1/800/600",
+        "https://picsum.photos/seed/hotel2/800/600",
+        "https://picsum.photos/seed/hotel3/800/600",
+        "https://picsum.photos/seed/hotel4/800/600",
       ],
     },
     {
@@ -92,10 +92,10 @@ export default function PortfolioPage() {
 
        mainImage: "/images/projects/img3.png",
       images: [
-         "/images/projects/image-3.png",
-        "/images/projects/image-3.png",
-        "/images/projects/image-3.png",
-        "/images/projects/image-3.png"
+        "https://picsum.photos/seed/elearn1/800/600",
+        "https://picsum.photos/seed/elearn2/800/600",
+        "https://picsum.photos/seed/elearn3/800/600",
+        "https://picsum.photos/seed/elearn4/800/600",
       ],
     },
     {
@@ -116,10 +116,10 @@ export default function PortfolioPage() {
 
        mainImage: "/images/projects/img4.png",
       images: [
-        "/images/projects/image-4.png",
-        "/images/projects/image-4.png",
-        "/images/projects/image-4.png",
-        "/images/projects/image-4.png"
+        "https://picsum.photos/seed/covers1/800/600",
+        "https://picsum.photos/seed/covers2/800/600",
+        "https://picsum.photos/seed/covers3/800/600",
+        "https://picsum.photos/seed/covers4/800/600",
       ],
     },
     {
@@ -140,10 +140,10 @@ export default function PortfolioPage() {
 
      mainImage: "/images/projects/img5.png",
       images: [
-        "/images/projects/image-5.png",
-        "/images/projects/image-5.png",
-        "/images/projects/image-5.png",
-        "/images/projects/image-5.png"
+        "https://picsum.photos/seed/logistic1/800/600",
+        "https://picsum.photos/seed/logistic2/800/600",
+        "https://picsum.photos/seed/logistic3/800/600",
+        "https://picsum.photos/seed/logistic4/800/600",
       ],
     },
     {
@@ -164,10 +164,10 @@ export default function PortfolioPage() {
 
       mainImage: "/images/projects/img6.png",
       images: [
-        "/images/projects/image-6.png",
-        "/images/projects/image-6.png",
-        "/images/projects/image-6.png",
-        "/images/projects/image-6.png"
+        "https://picsum.photos/seed/tech1/800/600",
+        "https://picsum.photos/seed/tech2/800/600",
+        "https://picsum.photos/seed/tech3/800/600",
+        "https://picsum.photos/seed/tech4/800/600",
       ],
     },
   ];
