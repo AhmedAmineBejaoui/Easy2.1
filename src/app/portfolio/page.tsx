@@ -30,122 +30,159 @@ export default function PortfolioPage() {
 
   const projects: Project[] = [
     {
-      id: "modameadows",
-      name: "ModaMeadows",
-      category: "Résidentiel",
-      year: "2023",
-      client: "The Morrison Family",
-      service: "Rénovation Complète",
-      description: "Transformation de penthouse de luxe avec élégance contemporaine et vie urbaine sophistiquée.",
-      challenge: "Transformer un penthouse daté en résidence de luxe moderne tout en préservant le caractère historique du bâtiment et en maximisant la lumière naturelle.",
-      solution: "Nous avons implémenté un design ouvert avec menuiserie sur mesure, technologie domotique intégrée, et matériaux soigneusement sélectionnés qui équilibrent chaleur et sophistication contemporaine.",
-      impact: "La transformation a résulté en une augmentation de 40% de la lumière naturelle, une fonctionnalité améliorée, et un espace de vie cohérent qui reflète parfaitement le style de vie de la famille.",
-      mainImage: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      id: "autopieces-express",
+      name: "AutoPièces Express",
+      category: "E-commerce / Automobile",
+      year: "2025",
+      client: "Pièce Auto",
+      service: "Création d’une boutique e-commerce sur mesure",
+      description:
+        "Conception et développement d’un site e-commerce intuitif dédié à la vente de pièces automobiles pour particuliers et professionnels.",
+      challenge:
+        "Créer une plateforme moderne et rapide pour gérer un vaste catalogue tout en simplifiant la recherche et la commande de pièces détachées.",
+      solution:
+        "Site responsive avec moteur de recherche avancé, filtres par modèle et année de véhicule, espace client et tableau de bord de commandes.",
+      impact:
+        "Une expérience d’achat fluide qui fidélise les professionnels comme les particuliers.",
+      mainImage:
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&h=600&q=80",
       images: [
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+        "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1571607384585-9c401af7dc2f?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&h=600&q=80"
       ]
     },
     {
-      id: "zenithspaces",
-      name: "ZenithSpaces",
-      category: "Éco-Responsable",
-      year: "2023",
-      client: "GreenTech Solutions",
-      service: "Design de Bureau Durable",
-      description: "Design de bureau minimaliste mettant l'accent sur les matériaux naturels, la durabilité et le bien-être des employés.",
-      challenge: "Créer un espace de travail qui favorise la productivité et le bien-être tout en respectant des normes de durabilité strictes et en incorporant des principes de design biophilique.",
-      solution: "Nous avons utilisé du bois récupéré, des murs végétaux, des systèmes d'éclairage naturel, et des matériaux écologiques dans tout l'espace, créant des zones dédiées pour la collaboration et le travail concentré.",
-      impact: "Le nouveau design a augmenté la satisfaction des employés de 35%, réduit la consommation d'énergie de 25%, et obtenu la certification LEED Platinum pour le design durable.",
-      mainImage: "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      id: "casa-del-mar",
+      name: "Casa Del Mar",
+      category: "Hôtellerie / Tourisme",
+      year: "2025",
+      client: "Casa Del Mar",
+      service: "Site web de réservation pour maison d’hôtes",
+      description:
+        "Création d’un site élégant et immersif pour une maison d’hôtes en bord de mer, avec système de réservation intégré et expérience multilingue.",
+      challenge:
+        "Attirer des voyageurs internationaux et faciliter les réservations directes avec paiement en ligne.",
+      solution:
+        "Développement d’un site multilingue responsive, formulaire de réservation simple, paiement sécurisé et mise en avant des services et activités.",
+      impact:
+        "Un taux de réservation en hausse grâce à une interface claire et rassurante.",
+      mainImage:
+        "https://images.unsplash.com/photo-1501117716987-c8e9bd0d0b7e?auto=format&fit=crop&w=800&h=600&q=80",
       images: [
-        "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+        "https://images.unsplash.com/photo-1501117716987-c8e9bd0d0b7e?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?auto=format&fit=crop&w=800&h=600&q=80"
       ]
     },
     {
-      id: "vervevilla",
-      name: "VerveVilla",
-      category: "Éclairage",
-      year: "2023",
-      client: "Villa Residents Association",
-      service: "Design d'Éclairage Architectural",
-      description: "Design d'éclairage innovant avec couleurs vibrantes et systèmes d'illumination dynamiques pour un complexe de villas de luxe.",
-      challenge: "Concevoir un système d'éclairage complet qui met en valeur les caractéristiques architecturales tout en créant une ambiance pour différents moments de la journée et diverses activités.",
-      solution: "Nous avons implémenté un éclairage en couches avec contrôles intelligents, éclairage d'accentuation pour les caractéristiques architecturales, et systèmes à couleurs changeantes qui s'adaptent aux rythmes circadiens naturels.",
-      impact: "Le design d'éclairage a augmenté la valeur de la propriété de 20%, réduit les coûts énergétiques de 30%, et créé une identité visuelle unique qui est devenue un point de repère du quartier.",
-      mainImage: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      id: "easy-ways-skills",
+      name: "Easy Ways Skills",
+      category: "E-learning / Éducation",
+      year: "2025",
+      client: "Easy Ways Studio",
+      service: "Plateforme de cours en ligne avec assistant IA",
+      description:
+        "Mise en place d’une plateforme d’apprentissage intuitive avec un agent IA pour guider les apprenants et des cours catégorisés par niveau et objectif.",
+      challenge:
+        "Créer une solution accessible aux débutants tout en intégrant des outils intelligents et un système de paiement sécurisé.",
+      solution:
+        "Pages d’accueil dynamiques, blog informatif, assistant virtuel, filtres de recherche avancés et processus de paiement avec réductions.",
+      impact:
+        "Une montée en compétence facilitée et une communauté d’apprenants en croissance.",
+      mainImage:
+        "https://images.unsplash.com/photo-1584697964154-86a1184a2ff9?auto=format&fit=crop&w=800&h=600&q=80",
       images: [
-        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+        "https://images.unsplash.com/photo-1584697964154-86a1184a2ff9?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1584697964263-c477c772cfa2?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1537432376769-00aabc1ad885?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&h=600&q=80"
       ]
     },
     {
-      id: "ecohaven",
-      name: "EcoHaven Studios",
-      category: "Commercial",
-      year: "2023",
-      client: "Creative Collective",
-      service: "Design d'Espace Studio",
-      description: "Espace studio commercial durable conçu pour les professionnels créatifs avec des environnements de travail flexibles.",
-      challenge: "Créer des espaces studio polyvalents qui peuvent accueillir diverses disciplines créatives tout en maintenant les objectifs de durabilité et en optimisant la lumière naturelle.",
-      solution: "Nous avons conçu des espaces modulaires avec cloisons mobiles, matériaux durables, lucarnes pour l'illumination naturelle, et équipements partagés qui favorisent la collaboration.",
-      impact: "Les studios ont atteint 95% d'occupation en trois mois, réduit les coûts opérationnels de 22%, et sont devenus un modèle pour le design commercial durable dans la ville.",
-      mainImage: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      id: "abrify",
+      name: "Abrify",
+      category: "E-commerce / Automobile",
+      year: "2025",
+      client: "Abrify",
+      service: "Site e-commerce pour housses de voiture",
+      description:
+        "Développement d’un site de vente en ligne spécialisé dans les housses de voiture personnalisées selon la marque et l’année.",
+      challenge:
+        "Permettre à l’utilisateur de sélectionner précisément la taille adaptée à son véhicule tout en découvrant les différents niveaux de protection.",
+      solution:
+        "Site responsive avec moteur de recherche par marque et modèle, fiches produits détaillées et option d’installation à domicile.",
+      impact:
+        "Une recherche simplifiée et une expérience d’achat rassurante pour les passionnés d’automobile.",
+      mainImage:
+        "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&h=600&q=80",
       images: [
-        "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+        "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1487754187004-1dbd07fd1853?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1511390421650-516d5c15c666?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1483728579513-3b7815b1cdec?auto=format&fit=crop&w=800&h=600&q=80"
       ]
     },
     {
-      id: "luxeloft",
-      name: "LuxeLoft",
-      category: "Résidentiel",
-      year: "2023",
-      client: "Urban Living Group",
-      service: "Rénovation de Loft de Luxe",
-      description: "Conversion de loft industriel de luxe avec éléments exposés et sophistication moderne.",
-      challenge: "Préserver le caractère industriel d'un entrepôt converti tout en créant un environnement de vie luxueux avec équipements et confort modernes.",
-      solution: "Nous avons conservé la brique apparente et les poutres d'acier, ajouté des finitions haut de gamme, créé des zones de vie définies, et intégré la technologie domotique de manière transparente dans l'esthétique industrielle.",
-      impact: "Le loft est devenu une propriété vitrine, inspirant des conversions similaires dans le quartier et atteignant une augmentation de 50% de la valeur immobilière tout en maintenant le charme industriel authentique.",
-      mainImage: "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      id: "tunivente",
+      name: "Tunivente",
+      category: "Marketplace / Logistique",
+      year: "2025",
+      client: "Tunivente",
+      service: "Plateforme de vente et livraison en temps réel",
+      description:
+        "Développement d’une plateforme de vente en ligne avec gestion de stock en temps réel et coordination entre marchands, clients et livreurs.",
+      challenge:
+        "Créer un écosystème digital capable de synchroniser de multiples acteurs tout en assurant rapidité et sécurité des paiements.",
+      solution:
+        "Dashboard centralisé, suivi de stock instantané, notifications de livraison et processus de commande ultra simplifié.",
+      impact:
+        "Réduction des erreurs de stock et délais de livraison optimisés pour le marché tunisien.",
+      mainImage:
+        "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&h=600&q=80",
       images: [
-        "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1556020685-ae41abfc9365?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+        "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1523475496153-3a12cf93cc21?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1527504432539-c79170d6af39?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&h=600&q=80"
       ]
     },
     {
-      id: "aurorapartments",
-      name: "AuroraApartments",
-      category: "Éco-Responsable",
-      year: "2023",
-      client: "Aurora Development",
-      service: "Design de Complexe Résidentiel",
-      description: "Complexe d'appartements contemporain avec éléments de design inspirés de l'aurore et caractéristiques durables.",
-      challenge: "Concevoir un complexe résidentiel multi-unités qui se démarque esthétiquement tout en incorporant des pratiques durables et en favorisant l'interaction communautaire.",
-      solution: "Nous avons créé des formes fluides et organiques inspirées des motifs d'aurore, intégré des toits verts, panneaux solaires, et espaces communautaires qui encouragent l'interaction entre résidents.",
-      impact: "Le complexe a atteint 100% de pré-location, remporté trois prix de durabilité, et est devenu un modèle pour le développement urbain respectueux de l'environnement.",
-      mainImage: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
+      id: "tech-flow",
+      name: "Tech Flow",
+      category: "Technologie / B2B",
+      year: "2025",
+      client: "Tech Flow",
+      service: "Site vitrine professionnel pour services technologiques",
+      description:
+        "Création d’un site clair pour présenter les services technologiques proposés avec navigation fluide et intégration de ressources externes.",
+      challenge:
+        "Valoriser l’expertise technique tout en restant accessible à des clients non spécialistes.",
+      solution:
+        "Sections services, témoignages, partenaires et blog, avec design responsive épuré orienté conversion.",
+      impact:
+        "Une présence en ligne professionnelle qui génère de nouveaux leads B2B.",
+      mainImage:
+        "https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&h=600&q=80",
       images: [
-        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1565182999561-18d7dc61c393?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600"
+        "https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&h=600&q=80",
+        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&h=600&q=80"
       ]
     }
   ];
 
-  const categories = ["Tous", "Résidentiel", "Commercial", "Éco-Responsable", "Éclairage"];
+  const categories = [
+    "Tous",
+    "E-commerce / Automobile",
+    "Hôtellerie / Tourisme",
+    "E-learning / Éducation",
+    "Marketplace / Logistique",
+    "Technologie / B2B"
+  ];
 
   const filteredProjects = selectedCategory === "Tous"
     ? projects
@@ -201,7 +238,7 @@ export default function PortfolioPage() {
               Nos <span className="italic font-bold text-[#c30011]">Projets</span> Réalisés
             </h1>
             <p className="text-xl text-[#000] leading-relaxed max-w-3xl mx-auto">
-              Découvrez notre portfolio de projets de design d'intérieur qui transforment les espaces en créant des environnements uniques et fonctionnels.
+              Découvrez nos réalisations digitales : boutiques en ligne, plateformes éducatives, solutions logistiques et plus encore.
             </p>
           </motion.div>
         </div>
