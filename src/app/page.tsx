@@ -8,6 +8,7 @@ import { Testimonials } from "@/sections/Testimonials";
 import { Blog } from "@/sections/Blog";
 import { Contact } from "@/sections/Contact";
 import { Objectifs } from "@/sections/Objectifs";
+import FaqSection from "@/sections/FaqSection";
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       </div>
       <Testimonials />
       <Blog />
+      <FaqSection />
       <div id="contact">
         <Contact />
       </div>
