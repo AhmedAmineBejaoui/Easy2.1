@@ -4,21 +4,38 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import PortfolioGallery from "@/components/portfolio-gallery";
 import { Button } from "@/components/ui/button";
-import { useTranslation } from "react-i18next";
+
 
 export function PortfolioPage() {
   return <PortfolioGallery />;
 }
 
 export default function FaqSection() {
-  const { t } = useTranslation();
+
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
-    { question: t('faq.question1'), answer: t('faq.answer1') },
-    { question: t('faq.question2'), answer: t('faq.answer2') },
-    { question: t('faq.question3'), answer: t('faq.answer3') },
-    { question: t('faq.question4'), answer: t('faq.answer4') },
+    {
+      question: "Combien de temps faut-il pour créer un site web ou une application ?",
+      answer:
+        "Chaque projet est unique, mais en général, un site vitrine prend entre 1 à 3 semaines, tandis qu’un projet plus complexe comme une application peut nécessiter plusieurs semaines. Nous définissons un planning précis dès le début.",
+    },
+    {
+      question: "Est-ce que je dois fournir le contenu (textes, images) ?",
+      answer:
+        "Vous pouvez, mais si vous n’en avez pas, notre équipe peut vous accompagner avec la rédaction, la création graphique et même la vidéo si besoin.",
+    },
+    {
+      question: "Quels sont vos tarifs et comment sont-ils calculés ?",
+      answer:
+        "Nos tarifs dépendent du type de projet, des fonctionnalités souhaitées et du niveau de personnalisation. Nous proposons toujours un devis transparent adapté à votre budget.",
+    },
+    {
+      question: "Est-ce que vous proposez un accompagnement après la livraison ?",
+      answer:
+        "Oui, nous assurons un support technique, des mises à jour si besoin, et un accompagnement stratégique pour faire évoluer votre projet au fil du temps.",
+    },
+
   ];
 
   const toggleFaq = (index: number) => {
@@ -43,9 +60,13 @@ export default function FaqSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-bold studio-primary mb-6">
-            {t('faq.heading')}
+
+            Vos questions répondues
           </h2>
-          <p className="text-xl studio-text-light">{t('faq.description')}</p>
+          <p className="text-xl studio-text-light">
+            Conseils d’experts pour réussir votre projet digital
+          </p>
+
         </motion.div>
 
         <div className="space-y-6">
@@ -98,7 +119,9 @@ export default function FaqSection() {
             onClick={() => scrollToSection("contact")}
             className="px-8 py-4 font-semibold hover-lift"
           >
-            Contact us
+
+            Contactez-nous
+
           </Button>
         </motion.div>
       </div>
