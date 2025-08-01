@@ -70,14 +70,14 @@ export default function AboutPage() {
                 Notre Mission
               </h2>
               <div className="space-y-4 text-lg text-studio-text-light leading-relaxed">
-                <p>🧠 Pourquoi on fait ce qu’on fait</p>
+                <p> Pourquoi on fait ce qu’on fait</p>
                 <p>
                   Chaque projet est pensé comme un levier stratégique pour aider les marques à se démarquer,
                   à optimiser leur visibilité et à toucher efficacement leurs audiences. L’approche est centrée
                   sur l’écoute du client, l’analyse de ses objectifs et la transformation de ses idées en
                   solutions tangibles et impactantes.
                 </p>
-                <p>💡 Valeurs fondamentales</p>
+                <p> Valeurs fondamentales</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Innovation : conception de solutions créatives qui répondent aux enjeux actuels</li>
                   <li>

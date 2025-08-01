@@ -1,4 +1,3 @@
-
 "use client";
 import React from "react";
 import { useState } from "react";
@@ -18,7 +17,6 @@ interface Project {
   description: string;
   challenge: string;
   solution: string;
-  impact: string;
   images: string[];
   mainImage: string;
 }
@@ -44,16 +42,13 @@ export default function PortfolioPage() {
         "Créer une plateforme moderne et rapide pour gérer un vaste catalogue tout en simplifiant la recherche et la commande de pièces détachées.",
       solution:
         "Site responsive avec moteur de recherche avancé, filtres par modèle et année de véhicule, espace client et tableau de bord de commandes.",
-      impact:
-        "Une expérience d’achat fluide qui fidélise les professionnels comme les particuliers.",
-      mainImage:
-        "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&h=600&q=80",
+      mainImage: "/images/projects/img1.png",
       images: [
-        "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1571607384585-9c401af7dc2f?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&h=600&q=80"
-      ]
+        "/images/projects/image1.png",
+        "/images/projects/image-1.png",
+        "/images/projects/image-1.png",
+        "/images/projects/image-1.png"
+      ],
     },
     {
       id: "casa-del-mar",
@@ -70,16 +65,14 @@ export default function PortfolioPage() {
         "Attirer des voyageurs internationaux et faciliter les réservations directes avec paiement en ligne.",
       solution:
         "Développement d’un site multilingue responsive, formulaire de réservation simple, paiement sécurisé et mise en avant des services et activités.",
-      impact:
-        "Un taux de réservation en hausse grâce à une interface claire et rassurante.",
-      mainImage:
-        "https://images.unsplash.com/photo-1501117716987-c8e9bd0d0b7e?auto=format&fit=crop&w=800&h=600&q=80",
+
+      mainImage: "/images/projects/img2.png",
       images: [
-        "https://images.unsplash.com/photo-1501117716987-c8e9bd0d0b7e?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?auto=format&fit=crop&w=800&h=600&q=80"
-      ]
+        "/images/projects/image-2.png",
+        "/images/projects/image-2.png",
+        "/images/projects/image-2.png",
+        "/images/projects/image-2.png"
+      ],
     },
     {
       id: "easy-ways-skills",
@@ -96,16 +89,14 @@ export default function PortfolioPage() {
         "Créer une solution accessible aux débutants tout en intégrant des outils intelligents et un système de paiement sécurisé.",
       solution:
         "Pages d’accueil dynamiques, blog informatif, assistant virtuel, filtres de recherche avancés et processus de paiement avec réductions.",
-      impact:
-        "Une montée en compétence facilitée et une communauté d’apprenants en croissance.",
-      mainImage:
-        "https://images.unsplash.com/photo-1584697964154-86a1184a2ff9?auto=format&fit=crop&w=800&h=600&q=80",
+
+       mainImage: "/images/projects/img3.png",
       images: [
-        "https://images.unsplash.com/photo-1584697964154-86a1184a2ff9?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1584697964263-c477c772cfa2?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1537432376769-00aabc1ad885?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&h=600&q=80"
-      ]
+         "/images/projects/image-3.png",
+        "/images/projects/image-3.png",
+        "/images/projects/image-3.png",
+        "/images/projects/image-3.png"
+      ],
     },
     {
       id: "abrify",
@@ -122,16 +113,14 @@ export default function PortfolioPage() {
         "Permettre à l’utilisateur de sélectionner précisément la taille adaptée à son véhicule tout en découvrant les différents niveaux de protection.",
       solution:
         "Site responsive avec moteur de recherche par marque et modèle, fiches produits détaillées et option d’installation à domicile.",
-      impact:
-        "Une recherche simplifiée et une expérience d’achat rassurante pour les passionnés d’automobile.",
-      mainImage:
-        "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&h=600&q=80",
+
+       mainImage: "/images/projects/img4.png",
       images: [
-        "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1487754187004-1dbd07fd1853?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1511390421650-516d5c15c666?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1483728579513-3b7815b1cdec?auto=format&fit=crop&w=800&h=600&q=80"
-      ]
+        "/images/projects/image-4.png",
+        "/images/projects/image-4.png",
+        "/images/projects/image-4.png",
+        "/images/projects/image-4.png"
+      ],
     },
     {
       id: "tunivente",
@@ -148,16 +137,14 @@ export default function PortfolioPage() {
         "Créer un écosystème digital capable de synchroniser de multiples acteurs tout en assurant rapidité et sécurité des paiements.",
       solution:
         "Dashboard centralisé, suivi de stock instantané, notifications de livraison et processus de commande ultra simplifié.",
-      impact:
-        "Réduction des erreurs de stock et délais de livraison optimisés pour le marché tunisien.",
-      mainImage:
-        "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&h=600&q=80",
+
+     mainImage: "/images/projects/img5.png",
       images: [
-        "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1523475496153-3a12cf93cc21?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1527504432539-c79170d6af39?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&h=600&q=80"
-      ]
+        "/images/projects/image-5.png",
+        "/images/projects/image-5.png",
+        "/images/projects/image-5.png",
+        "/images/projects/image-5.png"
+      ],
     },
     {
       id: "tech-flow",
@@ -174,17 +161,15 @@ export default function PortfolioPage() {
         "Valoriser l’expertise technique tout en restant accessible à des clients non spécialistes.",
       solution:
         "Sections services, témoignages, partenaires et blog, avec design responsive épuré orienté conversion.",
-      impact:
-        "Une présence en ligne professionnelle qui génère de nouveaux leads B2B.",
-      mainImage:
-        "https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&h=600&q=80",
+
+      mainImage: "/images/projects/img6.png",
       images: [
-        "https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&h=600&q=80",
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&h=600&q=80"
-      ]
-    }
+        "/images/projects/image-6.png",
+        "/images/projects/image-6.png",
+        "/images/projects/image-6.png",
+        "/images/projects/image-6.png"
+      ],
+    },
   ];
 
   const categories = [
@@ -193,16 +178,17 @@ export default function PortfolioPage() {
     "Hôtellerie / Tourisme",
     "E-learning / Éducation",
     "Marketplace / Logistique",
-    "Technologie / B2B"
+    "Technologie / B2B",
   ];
 
-  const filteredProjects = selectedCategory === "Tous"
-    ? projects
-    : projects.filter(project => project.category === selectedCategory);
+  const filteredProjects =
+    selectedCategory === "Tous"
+      ? projects
+      : projects.filter((project) => project.category === selectedCategory);
 
   const nextImage = () => {
     if (selectedProject) {
-      setCurrentImageIndex((prev) => 
+      setCurrentImageIndex((prev) =>
         prev === selectedProject.images.length - 1 ? 0 : prev + 1
       );
     }
@@ -210,7 +196,7 @@ export default function PortfolioPage() {
 
   const prevImage = () => {
     if (selectedProject) {
-      setCurrentImageIndex((prev) => 
+      setCurrentImageIndex((prev) =>
         prev === 0 ? selectedProject.images.length - 1 : prev - 1
       );
     }
@@ -224,7 +210,7 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen bg-[#EAEEFE]">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 bg-[#EAEEFE]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -247,10 +233,13 @@ export default function PortfolioPage() {
               </span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#000] mb-8 tracking-tight leading-tight">
-              Nos <span className="italic font-bold text-[#c30011]">Projets</span> Réalisés
+              Nos{" "}
+              <span className="italic font-bold text-[#c30011]">Projets</span>{" "}
+              Réalisés
             </h1>
             <p className="text-xl text-[#000] leading-relaxed max-w-3xl mx-auto">
-              Découvrez nos réalisations digitales : boutiques en ligne, plateformes éducatives, solutions logistiques et plus encore.
+              Découvrez nos réalisations digitales : boutiques en ligne,
+              plateformes éducatives, solutions logistiques et plus encore.
             </p>
           </motion.div>
         </div>
@@ -260,7 +249,7 @@ export default function PortfolioPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Category Filter */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -301,8 +290,12 @@ export default function PortfolioPage() {
                 />
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold text-[#000]">{project.name}</h3>
-                    <span className="text-sm text-[#c30011] font-semibold">{project.category}</span>
+                    <h3 className="text-xl font-bold text-[#000]">
+                      {project.name}
+                    </h3>
+                    <span className="text-sm text-[#c30011] font-semibold">
+                      {project.category}
+                    </span>
                   </div>
                   <p className="text-[#666] mb-4">{project.description}</p>
                   <div className="text-sm text-[#666]">
@@ -340,15 +333,17 @@ export default function PortfolioPage() {
                 >
                   <X size={24} />
                 </button>
-                
+
                 {/* Image Gallery */}
                 <div className="relative h-96 overflow-hidden">
                   <img
                     src={selectedProject.images[currentImageIndex]}
-                    alt={`${selectedProject.name} view ${currentImageIndex + 1}`}
+                    alt={`${selectedProject.name} view ${
+                      currentImageIndex + 1
+                    }`}
                     className="w-full h-full object-cover"
                   />
-                  
+
                   {selectedProject.images.length > 1 && (
                     <>
                       <button
@@ -388,27 +383,42 @@ export default function PortfolioPage() {
                     </div>
                   </div>
 
-                  <h2 className="text-3xl font-bold text-[#000] mb-6">{selectedProject.name}</h2>
+                  <h2 className="text-3xl font-bold text-[#000] mb-6">
+                    {selectedProject.name}
+                  </h2>
 
                   <div className="space-y-6">
                     <div>
-                      <h3 className="text-xl font-semibold text-[#000] mb-3">Aperçu du Projet</h3>
-                      <p className="text-[#666] leading-relaxed">{selectedProject.description}</p>
+                      <h3 className="text-xl font-semibold text-[#000] mb-3">
+                        Aperçu du Projet
+                      </h3>
+                      <p className="text-[#666] leading-relaxed">
+                        {selectedProject.description}
+                      </p>
                     </div>
-                    
+
                     <div>
-                      <h3 className="text-xl font-semibold text-[#000] mb-3">Défi</h3>
-                      <p className="text-[#666] leading-relaxed">{selectedProject.challenge}</p>
+                      <h3 className="text-xl font-semibold text-[#000] mb-3">
+                        Défi
+                      </h3>
+                      <p className="text-[#666] leading-relaxed">
+                        {selectedProject.challenge}
+                      </p>
                     </div>
-                    
+
                     <div>
-                      <h3 className="text-xl font-semibold text-[#000] mb-3">Solution</h3>
-                      <p className="text-[#666] leading-relaxed">{selectedProject.solution}</p>
+                      <h3 className="text-xl font-semibold text-[#000] mb-3">
+                        Solution
+                      </h3>
+                      <p className="text-[#666] leading-relaxed">
+                        {selectedProject.solution}
+                      </p>
                     </div>
-                    
+
                     <div>
-                      <h3 className="text-xl font-semibold text-[#000] mb-3">Impact</h3>
-                      <p className="text-[#666] leading-relaxed">{selectedProject.impact}</p>
+                      <h3 className="text-xl font-semibold text-[#000] mb-3">
+                        Impact
+                      </h3>
                     </div>
                   </div>
                 </div>
