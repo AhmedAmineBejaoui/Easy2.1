@@ -5,16 +5,24 @@ import MenuIcon from '../../public/assets/menu.svg';
 import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
-
-const scrollToSection = (id: string) => {
-  const section = document.getElementById(id);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-};
+import { usePathname, useRouter } from "next/navigation";
 
 export const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleNavigation = (id: string) => {
+    if (pathname === "/") {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    } else {
+      router.push(`/#${id}`);
+    }
+    setIsNavOpen(false);
+  };
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
@@ -58,10 +66,10 @@ export const Header = () => {
             </div>
             {/* Desktop Navbar */}
             <nav className="hidden md:flex md:ml-6 gap-6 text-black/60 items-center">
-              <button onClick={() => scrollToSection('home')}>Acceuil</button>
-              <button onClick={() => scrollToSection('services')}>Services</button>
-              <button onClick={() => scrollToSection('objectifs')}>Objectifs</button>
-              <button onClick={() => scrollToSection('contact')}>Contact</button>
+              <button onClick={() => handleNavigation('home')}>Acceuil</button>
+              <button onClick={() => handleNavigation('services')}>Services</button>
+              <button onClick={() => handleNavigation('objectifs')}>Objectifs</button>
+              <button onClick={() => handleNavigation('contact')}>Contact</button>
               <a
                 href="https://www.facebook.com/profile.php?id=61568758889313"
                 target="_blank"
@@ -77,10 +85,10 @@ export const Header = () => {
           {/* Mobile Navbar */}
           {isNavOpen && (
             <nav className="md:hidden mt-4 bg-white shadow-md rounded-lg p-4 flex flex-col gap-4">
-              <button onClick={() => scrollToSection('home')} className="text-black">Acceuil</button>
-              <button onClick={() => scrollToSection('services')} className="text-black">Services</button>
-              <button onClick={() => scrollToSection('objectifs')} className="text-black">Objectifs</button>
-              <button onClick={() => scrollToSection('contact')} className="text-black">Contact</button>
+              <button onClick={() => handleNavigation('home')} className="text-black">Acceuil</button>
+              <button onClick={() => handleNavigation('services')} className="text-black">Services</button>
+              <button onClick={() => handleNavigation('objectifs')} className="text-black">Objectifs</button>
+              <button onClick={() => handleNavigation('contact')} className="text-black">Contact</button>
               <a
                 href="https://www.facebook.com/profile.php?id=61568758889313"
                 target="_blank"
