@@ -44,10 +44,10 @@ export default function PortfolioPage() {
         "Site responsive avec moteur de recherche avancé, filtres par modèle et année de véhicule, espace client et tableau de bord de commandes.",
       mainImage: "/images/projects/img1.png",
       images: [
-        "https://picsum.photos/seed/autoparts1/800/600",
-        "https://picsum.photos/seed/autoparts2/800/600",
-        "https://picsum.photos/seed/autoparts3/800/600",
-        "https://picsum.photos/seed/autoparts4/800/600",
+        "/images/projects/img11.png",
+        "/images/projects/img12.png",
+        "/images/projects/img13.png",
+        "/images/projects/img14.png",
       ],
     },
     {
@@ -67,12 +67,7 @@ export default function PortfolioPage() {
         "Développement d’un site multilingue responsive, formulaire de réservation simple, paiement sécurisé et mise en avant des services et activités.",
 
       mainImage: "/images/projects/img2.png",
-      images: [
-        "https://picsum.photos/seed/hotel1/800/600",
-        "https://picsum.photos/seed/hotel2/800/600",
-        "https://picsum.photos/seed/hotel3/800/600",
-        "https://picsum.photos/seed/hotel4/800/600",
-      ],
+      images: ["/images/projects/img21.png", "/images/projects/img22.png"],
     },
     {
       id: "easy-ways-skills",
@@ -90,12 +85,11 @@ export default function PortfolioPage() {
       solution:
         "Pages d’accueil dynamiques, blog informatif, assistant virtuel, filtres de recherche avancés et processus de paiement avec réductions.",
 
-       mainImage: "/images/projects/img3.png",
+      mainImage: "/images/projects/img3.png",
       images: [
-        "https://picsum.photos/seed/elearn1/800/600",
-        "https://picsum.photos/seed/elearn2/800/600",
-        "https://picsum.photos/seed/elearn3/800/600",
-        "https://picsum.photos/seed/elearn4/800/600",
+        "/images/projects/img31.png",
+        "/images/projects/img32.png",
+        "/images/projects/img33.png",
       ],
     },
     {
@@ -114,12 +108,11 @@ export default function PortfolioPage() {
       solution:
         "Site responsive avec moteur de recherche par marque et modèle, fiches produits détaillées et option d’installation à domicile.",
 
-       mainImage: "/images/projects/img4.png",
+      mainImage: "/images/projects/img4.png",
       images: [
-        "https://picsum.photos/seed/covers1/800/600",
-        "https://picsum.photos/seed/covers2/800/600",
-        "https://picsum.photos/seed/covers3/800/600",
-        "https://picsum.photos/seed/covers4/800/600",
+        "images/projects/img41.png",
+        "images/projects/img42.png",
+
       ],
     },
     {
@@ -138,12 +131,11 @@ export default function PortfolioPage() {
       solution:
         "Dashboard centralisé, suivi de stock instantané, notifications de livraison et processus de commande ultra simplifié.",
 
-     mainImage: "/images/projects/img5.png",
+      mainImage: "/images/projects/img5.png",
       images: [
-        "https://picsum.photos/seed/logistic1/800/600",
-        "https://picsum.photos/seed/logistic2/800/600",
-        "https://picsum.photos/seed/logistic3/800/600",
-        "https://picsum.photos/seed/logistic4/800/600",
+        "images/projects/img51.png",
+        "images/projects/img52.png",
+        "images/projects/img53.png",
       ],
     },
     {
@@ -164,10 +156,9 @@ export default function PortfolioPage() {
 
       mainImage: "/images/projects/img6.png",
       images: [
-        "https://picsum.photos/seed/tech1/800/600",
-        "https://picsum.photos/seed/tech2/800/600",
-        "https://picsum.photos/seed/tech3/800/600",
-        "https://picsum.photos/seed/tech4/800/600",
+        "images/projects/img61.png",
+        "images/projects/img62.png",
+        "images/projects/img63.png",
       ],
     },
   ];
